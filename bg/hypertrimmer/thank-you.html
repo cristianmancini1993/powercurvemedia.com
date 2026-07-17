@@ -2,14 +2,25 @@
 <html lang="bg">
 <head>
 <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-17528466836"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18294109732"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
-  gtag('config', 'AW-17528466836');
+  gtag('config', 'AW-18294109732');
 </script>
+<!-- Event snippet for conversione - acc 649 - maestro conversion page -->
+<script>
+  gtag('event', 'conversion', {
+      'send_to': 'AW-18294109732/a9nKCLb2-9EcEKTsp5NE',
+      'value': 79.90,
+      'currency': 'EUR',
+      'transaction_id': ''
+      // 'new_customer': true /* calculate dynamically, populate with true/false */,
+  });
+</script>
+
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Ordine ricevuto — Attendi la chiamata di conferma | HyperTrimmer™ 3000</title>
@@ -208,7 +219,7 @@ window.addEventListener('load', function () {
     var transactionId = p.get('order_id') || p.get('transaction_id') || p.get('tid') || subid || '';
 
     gtag('event', 'conversion', {
-      'send_to': 'AW-17528466836/9BwoCJ-LjqccEJTbnKZB',
+      'send_to': 'AW-18294109732/9BwoCJ-LjqccEJTbnKZB',
       'value': 1.0,
       'currency': 'EUR',
       'transaction_id': transactionId,
