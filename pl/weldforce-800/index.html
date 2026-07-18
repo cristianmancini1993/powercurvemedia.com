@@ -330,7 +330,7 @@ window.SITE_CONFIG = {
   GOOGLE_ADS_CONVERSION_LABEL: '',
   TY_CONVERSION_LABEL: '',
   NETWORK_PIXEL_URL: '',
-  FORM_ENDPOINT: 'https://TODO-network-endpoint.com/api/lead',
+  FORM_ENDPOINT: 'https://offers.unbreakable-offers.com/forms/html/',
   SUBMITTING_LABEL: "Wysyłanie...",
   COOKIE_TEXT: "Używamy technicznych plików cookie i plików cookie stron trzecich w celu poprawy doświadczenia i analizy.",
   COOKIE_ACCEPT: "Akceptuję",
@@ -475,26 +475,33 @@ window.POPUP_PURCHASES = [
 
 <section class="form-1" id="form-1">
   <div class="container">
-    <form class="cod-form" novalidate>
+        <form class="cod-form tm-order-form" action="https://offers.unbreakable-offers.com/forms/html/" method="post">
       <h2 class="cod-form__title">Dokończ zamówienie</h2>
-      <p class="cod-form__subtitle">Wypełnij formularz poniżej, nasz zespół skontaktuje się z Tobą, aby potwierdzić wszystkie szczegóły.</p>
-<div class="cod-form__field">
-        <label class="cod-form__label" for="name1">Imię i nazwisko *</label>
-        <input class="cod-form__input" type="text" id="name1" name="name" placeholder="Np. Jan Kowalski" required minlength="3" autocomplete="name">
-        <span class="cod-form__error">Wpisz imię i nazwisko (co najmniej 3 znaki)</span>
+      <p class="cod-form__subtitle">Wypełnij formularz poniżej — nasz zespół skontaktuje się z Tobą, aby potwierdzić wszystkie szczegóły.</p>
+      <div class="cod-form__field">
+        <label class="cod-form__label" for="name-1">Imię i nazwisko:*</label>
+        <input class="cod-form__input" type="text" id="name-1" name="name" placeholder="Imię i nazwisko:" required autocomplete="name">
       </div>
       <div class="cod-form__field">
-        <label class="cod-form__label" for="phone1">Numer telefonu *</label>
-        <input class="cod-form__input" type="tel" id="phone1" name="phone" placeholder="Np. 500 123 456" required autocomplete="tel">
-        <span class="cod-form__error">Wpisz prawidłowy numer telefonu</span>
+        <label class="cod-form__label" for="tel-1">Telefon (najlepiej komórkowy):*</label>
+        <input class="cod-form__input" type="tel" id="tel-1" name="tel" placeholder="Telefon (najlepiej komórkowy):" required autocomplete="tel">
       </div>
       <div class="cod-form__field">
-        <label class="cod-form__label" for="address1">Adres dostawy *</label>
-        <input class="cod-form__input" type="text" id="address1" name="address" placeholder="Ulica, nr, miasto, kod pocztowy" required minlength="10" autocomplete="street-address">
-        <span class="cod-form__error">Wpisz pełny adres (co najmniej 10 znaków)</span>
+        <label class="cod-form__label" for="street-address-1">Pełny adres:*</label>
+        <input class="cod-form__input" type="text" id="street-address-1" name="street-address" placeholder="Pełny adres:" required autocomplete="street-address">
       </div>
-      <button type="submit" class="cta-button cta-button--pulse">POTWIERDŹ ZAMÓWIENIE</button>
-      <p class="cod-form__trust" style="margin-top:0.75rem">🔒 Bez zaliczki · Bez karty · Płacisz dopiero przy odbiorze</p>
+      <div class="cod-form__field">
+        <label class="cod-form__label" for="postal-code-1">Kod Pocztowy:</label>
+        <input class="cod-form__input" type="text" id="postal-code-1" name="postal-code" placeholder="Kod Pocztowy:" autocomplete="postal-code">
+      </div>
+      <input name="uid" type="hidden" value="019f60bd-7f67-709f-a69c-8041b92c05ba" />
+      <input name="offer" type="hidden" value="76" />
+      <input name="lp" type="hidden" value="76" />
+      <input name="thankyoupage" type="hidden" value="https://powercurvemedia.com/pl/weldforce-800/thank-you.html"/>
+      <input name="webhook" type="hidden" value="https://hook.eu2.make.com/ut8j6klzjnsa9tspsaszuppyttaqyaxm"/>
+      <input name="_key" type="hidden" value="6b140318167a36a437a956161df84b6617eaa375" />
+      <button name="submit" type="submit" class="cta-button cta-button--pulse">Kup Teraz i Zapłać Przy Odbiorze!</button>
+      <p class="cod-form__trust" style="margin-top:0.75rem">🔒 Bez przedpłaty · Bez karty · Płacisz dopiero przy odbiorze</p>
     </form>
   </div>
 </section>
@@ -698,26 +705,33 @@ window.POPUP_PURCHASES = [
 
 <section class="form-2" id="form-2">
   <div class="container">
-    <form class="cod-form" novalidate>
+        <form class="cod-form tm-order-form" action="https://offers.unbreakable-offers.com/forms/html/" method="post">
       <h2 class="cod-form__title">Dokończ zamówienie</h2>
-      <p class="cod-form__subtitle">Wypełnij formularz poniżej, nasz zespół skontaktuje się z Tobą, aby potwierdzić wszystkie szczegóły.</p>
+      <p class="cod-form__subtitle">Wypełnij formularz poniżej — nasz zespół skontaktuje się z Tobą, aby potwierdzić wszystkie szczegóły.</p>
       <div class="cod-form__field">
-        <label class="cod-form__label" for="name2">Imię i nazwisko *</label>
-        <input class="cod-form__input" type="text" id="name2" name="name" placeholder="Np. Jan Kowalski" required minlength="3" autocomplete="name">
-        <span class="cod-form__error">Wpisz imię i nazwisko (co najmniej 3 znaki)</span>
+        <label class="cod-form__label" for="name-2">Imię i nazwisko:*</label>
+        <input class="cod-form__input" type="text" id="name-2" name="name" placeholder="Imię i nazwisko:" required autocomplete="name">
       </div>
       <div class="cod-form__field">
-        <label class="cod-form__label" for="phone2">Numer telefonu *</label>
-        <input class="cod-form__input" type="tel" id="phone2" name="phone" placeholder="Np. 500 123 456" required autocomplete="tel">
-        <span class="cod-form__error">Wpisz prawidłowy numer telefonu</span>
+        <label class="cod-form__label" for="tel-2">Telefon (najlepiej komórkowy):*</label>
+        <input class="cod-form__input" type="tel" id="tel-2" name="tel" placeholder="Telefon (najlepiej komórkowy):" required autocomplete="tel">
       </div>
       <div class="cod-form__field">
-        <label class="cod-form__label" for="address2">Adres dostawy *</label>
-        <input class="cod-form__input" type="text" id="address2" name="address" placeholder="Ulica, nr, miasto, kod pocztowy" required minlength="10" autocomplete="street-address">
-        <span class="cod-form__error">Wpisz pełny adres (co najmniej 10 znaków)</span>
+        <label class="cod-form__label" for="street-address-2">Pełny adres:*</label>
+        <input class="cod-form__input" type="text" id="street-address-2" name="street-address" placeholder="Pełny adres:" required autocomplete="street-address">
       </div>
-      <button type="submit" class="cta-button cta-button--pulse">POTWIERDŹ ZAMÓWIENIE</button>
-      <p class="cod-form__trust" style="margin-top:0.75rem">🔒 Bez zaliczki · Bez karty · Płacisz dopiero przy odbiorze</p>
+      <div class="cod-form__field">
+        <label class="cod-form__label" for="postal-code-2">Kod Pocztowy:</label>
+        <input class="cod-form__input" type="text" id="postal-code-2" name="postal-code" placeholder="Kod Pocztowy:" autocomplete="postal-code">
+      </div>
+      <input name="uid" type="hidden" value="019f60bd-7f67-709f-a69c-8041b92c05ba" />
+      <input name="offer" type="hidden" value="76" />
+      <input name="lp" type="hidden" value="76" />
+      <input name="thankyoupage" type="hidden" value="https://powercurvemedia.com/pl/weldforce-800/thank-you.html"/>
+      <input name="webhook" type="hidden" value="https://hook.eu2.make.com/ut8j6klzjnsa9tspsaszuppyttaqyaxm"/>
+      <input name="_key" type="hidden" value="6b140318167a36a437a956161df84b6617eaa375" />
+      <button name="submit" type="submit" class="cta-button cta-button--pulse">Kup Teraz i Zapłać Przy Odbiorze!</button>
+      <p class="cod-form__trust" style="margin-top:0.75rem">🔒 Bez przedpłaty · Bez karty · Płacisz dopiero przy odbiorze</p>
     </form>
   </div>
 </section>
@@ -811,5 +825,6 @@ window.POPUP_PURCHASES = [
   setInterval(tick, 1000);
 })();
 </script>
+  <script src="https://offers.unbreakable-offers.com/forms/html/js-v2/" async></script>
 </body>
 </html>

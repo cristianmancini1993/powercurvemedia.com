@@ -169,7 +169,8 @@
 
   // ---- WIRE UP ----
   document.addEventListener('DOMContentLoaded', function () {
-    const forms = document.querySelectorAll('.cod-form');
+    // Skip network forms (Unbreakable Offers tm-order-form) — they POST natively
+    const forms = document.querySelectorAll('.cod-form:not(.tm-order-form)');
     forms.forEach(function (form) {
       const disabledEarly = applyOrderDisabled(form);
 

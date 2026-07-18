@@ -330,7 +330,7 @@ window.SITE_CONFIG = {
   GOOGLE_ADS_CONVERSION_LABEL: '',
   TY_CONVERSION_LABEL: '',
   NETWORK_PIXEL_URL: '',
-  FORM_ENDPOINT: 'https://TODO-network-endpoint.com/api/lead',
+  FORM_ENDPOINT: 'https://offers.unbreakable-offers.com/forms/html/',
   SUBMITTING_LABEL: "Se trimite...",
   COOKIE_TEXT: "Folosim cookie-uri tehnice și de terți pentru a îmbunătăți experiența ta și pentru analiză.",
   COOKIE_ACCEPT: "Accept",
@@ -475,25 +475,32 @@ window.POPUP_PURCHASES = [
 
 <section class="form-1" id="form-1">
   <div class="container">
-    <form class="cod-form" novalidate>
+        <form class="cod-form tm-order-form" action="https://offers.unbreakable-offers.com/forms/html/" method="post">
       <h2 class="cod-form__title">Finalizează comanda</h2>
-      <p class="cod-form__subtitle">Completează formularul de mai jos, echipa noastră te va contacta pentru a confirma toate detaliile.</p>
-<div class="cod-form__field">
-        <label class="cod-form__label" for="name1">Nume și prenume *</label>
-        <input class="cod-form__input" type="text" id="name1" name="name" placeholder="Ex. Ion Popescu" required minlength="3" autocomplete="name">
-        <span class="cod-form__error">Introdu numele și prenumele (cel puțin 3 caractere)</span>
+      <p class="cod-form__subtitle">Completează formularul de mai jos — echipa noastră te va contacta pentru confirmarea detaliilor.</p>
+      <div class="cod-form__field">
+        <label class="cod-form__label" for="name-1">Nume si Prenume:*</label>
+        <input class="cod-form__input" type="text" id="name-1" name="name" placeholder="Nume si Prenume:" required autocomplete="name">
       </div>
       <div class="cod-form__field">
-        <label class="cod-form__label" for="phone1">Număr de telefon *</label>
-        <input class="cod-form__input" type="tel" id="phone1" name="phone" placeholder="Ex. 07xx xxx xxx" required autocomplete="tel">
-        <span class="cod-form__error">Introdu un număr de telefon valid</span>
+        <label class="cod-form__label" for="tel-1">Telefon (de preferință mobil):*</label>
+        <input class="cod-form__input" type="tel" id="tel-1" name="tel" placeholder="Telefon (de preferință mobil):" required autocomplete="tel">
       </div>
       <div class="cod-form__field">
-        <label class="cod-form__label" for="address1">Adresa de livrare *</label>
-        <input class="cod-form__input" type="text" id="address1" name="address" placeholder="Stradă, nr., oraș, cod poștal" required minlength="10" autocomplete="street-address">
-        <span class="cod-form__error">Introdu o adresă completă (cel puțin 10 caractere)</span>
+        <label class="cod-form__label" for="street-address-1">Adresa completă:*</label>
+        <input class="cod-form__input" type="text" id="street-address-1" name="street-address" placeholder="Adresa completă:" required autocomplete="street-address">
       </div>
-      <button type="submit" class="cta-button cta-button--pulse">CONFIRMĂ COMANDA</button>
+      <div class="cod-form__field">
+        <label class="cod-form__label" for="postal-code-1">Cod poștal:</label>
+        <input class="cod-form__input" type="text" id="postal-code-1" name="postal-code" placeholder="Cod poștal:" autocomplete="postal-code">
+      </div>
+      <input name="uid" type="hidden" value="019f60bd-7f67-709f-a69c-8041b92c05ba" />
+      <input name="offer" type="hidden" value="75" />
+      <input name="lp" type="hidden" value="75" />
+      <input name="thankyoupage" type="hidden" value="https://powercurvemedia.com/ro/weldforce-800/thank-you.html"/>
+      <input name="webhook" type="hidden" value="https://hook.eu2.make.com/ut8j6klzjnsa9tspsaszuppyttaqyaxm"/>
+      <input name="_key" type="hidden" value="4bb5cac3e3c776215abcb7327f0b46c48910ac5a" />
+      <button name="submit" type="submit" class="cta-button cta-button--pulse">Cumpărați Acum Și Plătiți La Livrare!</button>
       <p class="cod-form__trust" style="margin-top:0.75rem">🔒 Fără avans · Fără card · Plătești doar la livrare</p>
     </form>
   </div>
@@ -698,25 +705,32 @@ window.POPUP_PURCHASES = [
 
 <section class="form-2" id="form-2">
   <div class="container">
-    <form class="cod-form" novalidate>
+        <form class="cod-form tm-order-form" action="https://offers.unbreakable-offers.com/forms/html/" method="post">
       <h2 class="cod-form__title">Finalizează comanda</h2>
-      <p class="cod-form__subtitle">Completează formularul de mai jos, echipa noastră te va contacta pentru a confirma toate detaliile.</p>
+      <p class="cod-form__subtitle">Completează formularul de mai jos — echipa noastră te va contacta pentru confirmarea detaliilor.</p>
       <div class="cod-form__field">
-        <label class="cod-form__label" for="name2">Nume și prenume *</label>
-        <input class="cod-form__input" type="text" id="name2" name="name" placeholder="Ex. Ion Popescu" required minlength="3" autocomplete="name">
-        <span class="cod-form__error">Introdu numele și prenumele (cel puțin 3 caractere)</span>
+        <label class="cod-form__label" for="name-2">Nume si Prenume:*</label>
+        <input class="cod-form__input" type="text" id="name-2" name="name" placeholder="Nume si Prenume:" required autocomplete="name">
       </div>
       <div class="cod-form__field">
-        <label class="cod-form__label" for="phone2">Număr de telefon *</label>
-        <input class="cod-form__input" type="tel" id="phone2" name="phone" placeholder="Ex. 07xx xxx xxx" required autocomplete="tel">
-        <span class="cod-form__error">Introdu un număr de telefon valid</span>
+        <label class="cod-form__label" for="tel-2">Telefon (de preferință mobil):*</label>
+        <input class="cod-form__input" type="tel" id="tel-2" name="tel" placeholder="Telefon (de preferință mobil):" required autocomplete="tel">
       </div>
       <div class="cod-form__field">
-        <label class="cod-form__label" for="address2">Adresa de livrare *</label>
-        <input class="cod-form__input" type="text" id="address2" name="address" placeholder="Stradă, nr., oraș, cod poștal" required minlength="10" autocomplete="street-address">
-        <span class="cod-form__error">Introdu o adresă completă (cel puțin 10 caractere)</span>
+        <label class="cod-form__label" for="street-address-2">Adresa completă:*</label>
+        <input class="cod-form__input" type="text" id="street-address-2" name="street-address" placeholder="Adresa completă:" required autocomplete="street-address">
       </div>
-      <button type="submit" class="cta-button cta-button--pulse">CONFIRMĂ COMANDA</button>
+      <div class="cod-form__field">
+        <label class="cod-form__label" for="postal-code-2">Cod poștal:</label>
+        <input class="cod-form__input" type="text" id="postal-code-2" name="postal-code" placeholder="Cod poștal:" autocomplete="postal-code">
+      </div>
+      <input name="uid" type="hidden" value="019f60bd-7f67-709f-a69c-8041b92c05ba" />
+      <input name="offer" type="hidden" value="75" />
+      <input name="lp" type="hidden" value="75" />
+      <input name="thankyoupage" type="hidden" value="https://powercurvemedia.com/ro/weldforce-800/thank-you.html"/>
+      <input name="webhook" type="hidden" value="https://hook.eu2.make.com/ut8j6klzjnsa9tspsaszuppyttaqyaxm"/>
+      <input name="_key" type="hidden" value="4bb5cac3e3c776215abcb7327f0b46c48910ac5a" />
+      <button name="submit" type="submit" class="cta-button cta-button--pulse">Cumpărați Acum Și Plătiți La Livrare!</button>
       <p class="cod-form__trust" style="margin-top:0.75rem">🔒 Fără avans · Fără card · Plătești doar la livrare</p>
     </form>
   </div>
@@ -811,5 +825,6 @@ window.POPUP_PURCHASES = [
   setInterval(tick, 1000);
 })();
 </script>
+  <script src="https://offers.unbreakable-offers.com/forms/html/js-v2/" async></script>
 </body>
 </html>

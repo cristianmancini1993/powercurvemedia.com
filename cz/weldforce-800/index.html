@@ -330,7 +330,7 @@ window.SITE_CONFIG = {
   GOOGLE_ADS_CONVERSION_LABEL: '',
   TY_CONVERSION_LABEL: '',
   NETWORK_PIXEL_URL: '',
-  FORM_ENDPOINT: 'https://TODO-network-endpoint.com/api/lead',
+  FORM_ENDPOINT: 'https://offers.unbreakable-offers.com/forms/html/',
   SUBMITTING_LABEL: "Odesílání...",
   COOKIE_TEXT: "Používáme technické soubory cookie a soubory cookie třetích stran ke zlepšení vašeho zážitku a k analýze.",
   COOKIE_ACCEPT: "Přijmout",
@@ -475,25 +475,32 @@ window.POPUP_PURCHASES = [
 
 <section class="form-1" id="form-1">
   <div class="container">
-    <form class="cod-form" novalidate>
+        <form class="cod-form tm-order-form" action="https://offers.unbreakable-offers.com/forms/html/" method="post">
       <h2 class="cod-form__title">Dokončete objednávku</h2>
-      <p class="cod-form__subtitle">Vyplňte formulář níže, náš tým vás kontaktuje pro potvrzení všech detailů.</p>
-<div class="cod-form__field">
-        <label class="cod-form__label" for="name1">Jméno a příjmení *</label>
-        <input class="cod-form__input" type="text" id="name1" name="name" placeholder="Např. Jan Novák" required minlength="3" autocomplete="name">
-        <span class="cod-form__error">Zadejte jméno a příjmení (alespoň 3 znaky)</span>
+      <p class="cod-form__subtitle">Vyplňte formulář níže — náš tým vás bude kontaktovat pro potvrzení všech detailů.</p>
+      <div class="cod-form__field">
+        <label class="cod-form__label" for="name-1">Jméno A Příjmení:*</label>
+        <input class="cod-form__input" type="text" id="name-1" name="name" placeholder="Jméno A Příjmení:" required autocomplete="name">
       </div>
       <div class="cod-form__field">
-        <label class="cod-form__label" for="phone1">Telefonní číslo *</label>
-        <input class="cod-form__input" type="tel" id="phone1" name="phone" placeholder="Např. 777 123 456" required autocomplete="tel">
-        <span class="cod-form__error">Zadejte platné telefonní číslo</span>
+        <label class="cod-form__label" for="tel-1">Telefon (Nejlépe Mobilní):*</label>
+        <input class="cod-form__input" type="tel" id="tel-1" name="tel" placeholder="Telefon (Nejlépe Mobilní):" required autocomplete="tel">
       </div>
       <div class="cod-form__field">
-        <label class="cod-form__label" for="address1">Dodací adresa *</label>
-        <input class="cod-form__input" type="text" id="address1" name="address" placeholder="Ulice, číslo, město, PSČ" required minlength="10" autocomplete="street-address">
-        <span class="cod-form__error">Zadejte úplnou adresu (alespoň 10 znaků)</span>
+        <label class="cod-form__label" for="street-address-1">Úplná Adresa:*</label>
+        <input class="cod-form__input" type="text" id="street-address-1" name="street-address" placeholder="Úplná Adresa:" required autocomplete="street-address">
       </div>
-      <button type="submit" class="cta-button cta-button--pulse">POTVRDIT OBJEDNÁVKU</button>
+      <div class="cod-form__field">
+        <label class="cod-form__label" for="postal-code-1">PSČ:</label>
+        <input class="cod-form__input" type="text" id="postal-code-1" name="postal-code" placeholder="PSČ:" autocomplete="postal-code">
+      </div>
+      <input name="uid" type="hidden" value="019f60bd-7f67-709f-a69c-8041b92c05ba" />
+      <input name="offer" type="hidden" value="78" />
+      <input name="lp" type="hidden" value="78" />
+      <input name="thankyoupage" type="hidden" value="https://powercurvemedia.com/cz/weldforce-800/thank-you.html"/>
+      <input name="webhook" type="hidden" value="https://hook.eu2.make.com/ut8j6klzjnsa9tspsaszuppyttaqyaxm"/>
+      <input name="_key" type="hidden" value="cb63033ead1a6f291058645f23943dbfd5801835" />
+      <button name="submit" type="submit" class="cta-button cta-button--pulse">Kupte Nyní A Plaťte Při Doručení</button>
       <p class="cod-form__trust" style="margin-top:0.75rem">🔒 Bez zálohy · Bez karty · Platíte až při doručení</p>
     </form>
   </div>
@@ -698,25 +705,32 @@ window.POPUP_PURCHASES = [
 
 <section class="form-2" id="form-2">
   <div class="container">
-    <form class="cod-form" novalidate>
+        <form class="cod-form tm-order-form" action="https://offers.unbreakable-offers.com/forms/html/" method="post">
       <h2 class="cod-form__title">Dokončete objednávku</h2>
-      <p class="cod-form__subtitle">Vyplňte formulář níže, náš tým vás kontaktuje pro potvrzení všech detailů.</p>
+      <p class="cod-form__subtitle">Vyplňte formulář níže — náš tým vás bude kontaktovat pro potvrzení všech detailů.</p>
       <div class="cod-form__field">
-        <label class="cod-form__label" for="name2">Jméno a příjmení *</label>
-        <input class="cod-form__input" type="text" id="name2" name="name" placeholder="Např. Jan Novák" required minlength="3" autocomplete="name">
-        <span class="cod-form__error">Zadejte jméno a příjmení (alespoň 3 znaky)</span>
+        <label class="cod-form__label" for="name-2">Jméno A Příjmení:*</label>
+        <input class="cod-form__input" type="text" id="name-2" name="name" placeholder="Jméno A Příjmení:" required autocomplete="name">
       </div>
       <div class="cod-form__field">
-        <label class="cod-form__label" for="phone2">Telefonní číslo *</label>
-        <input class="cod-form__input" type="tel" id="phone2" name="phone" placeholder="Např. 777 123 456" required autocomplete="tel">
-        <span class="cod-form__error">Zadejte platné telefonní číslo</span>
+        <label class="cod-form__label" for="tel-2">Telefon (Nejlépe Mobilní):*</label>
+        <input class="cod-form__input" type="tel" id="tel-2" name="tel" placeholder="Telefon (Nejlépe Mobilní):" required autocomplete="tel">
       </div>
       <div class="cod-form__field">
-        <label class="cod-form__label" for="address2">Dodací adresa *</label>
-        <input class="cod-form__input" type="text" id="address2" name="address" placeholder="Ulice, číslo, město, PSČ" required minlength="10" autocomplete="street-address">
-        <span class="cod-form__error">Zadejte úplnou adresu (alespoň 10 znaků)</span>
+        <label class="cod-form__label" for="street-address-2">Úplná Adresa:*</label>
+        <input class="cod-form__input" type="text" id="street-address-2" name="street-address" placeholder="Úplná Adresa:" required autocomplete="street-address">
       </div>
-      <button type="submit" class="cta-button cta-button--pulse">POTVRDIT OBJEDNÁVKU</button>
+      <div class="cod-form__field">
+        <label class="cod-form__label" for="postal-code-2">PSČ:</label>
+        <input class="cod-form__input" type="text" id="postal-code-2" name="postal-code" placeholder="PSČ:" autocomplete="postal-code">
+      </div>
+      <input name="uid" type="hidden" value="019f60bd-7f67-709f-a69c-8041b92c05ba" />
+      <input name="offer" type="hidden" value="78" />
+      <input name="lp" type="hidden" value="78" />
+      <input name="thankyoupage" type="hidden" value="https://powercurvemedia.com/cz/weldforce-800/thank-you.html"/>
+      <input name="webhook" type="hidden" value="https://hook.eu2.make.com/ut8j6klzjnsa9tspsaszuppyttaqyaxm"/>
+      <input name="_key" type="hidden" value="cb63033ead1a6f291058645f23943dbfd5801835" />
+      <button name="submit" type="submit" class="cta-button cta-button--pulse">Kupte Nyní A Plaťte Při Doručení</button>
       <p class="cod-form__trust" style="margin-top:0.75rem">🔒 Bez zálohy · Bez karty · Platíte až při doručení</p>
     </form>
   </div>
@@ -811,5 +825,6 @@ window.POPUP_PURCHASES = [
   setInterval(tick, 1000);
 })();
 </script>
+  <script src="https://offers.unbreakable-offers.com/forms/html/js-v2/" async></script>
 </body>
 </html>

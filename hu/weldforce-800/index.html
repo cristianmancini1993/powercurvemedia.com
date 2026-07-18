@@ -330,7 +330,7 @@ window.SITE_CONFIG = {
   GOOGLE_ADS_CONVERSION_LABEL: '',
   TY_CONVERSION_LABEL: '',
   NETWORK_PIXEL_URL: '',
-  FORM_ENDPOINT: 'https://TODO-network-endpoint.com/api/lead',
+  FORM_ENDPOINT: 'https://offers.unbreakable-offers.com/forms/html/',
   SUBMITTING_LABEL: "Küldés folyamatban...",
   COOKIE_TEXT: "Technikai és harmadik féltől származó sütiket használunk az élmény javítása és elemzés céljából.",
   COOKIE_ACCEPT: "Elfogadom",
@@ -475,26 +475,33 @@ window.POPUP_PURCHASES = [
 
 <section class="form-1" id="form-1">
   <div class="container">
-    <form class="cod-form" novalidate>
-      <h2 class="cod-form__title">Fejezze be a rendelését</h2>
-      <p class="cod-form__subtitle">Töltse ki az alábbi űrlapot, csapatunk felveszi Önnel a kapcsolatot az összes részlet megerősítéséhez.</p>
-<div class="cod-form__field">
-        <label class="cod-form__label" for="name1">Teljes név *</label>
-        <input class="cod-form__input" type="text" id="name1" name="name" placeholder="Pl. Kovács János" required minlength="3" autocomplete="name">
-        <span class="cod-form__error">Adja meg a teljes nevét (legalább 3 karakter)</span>
+        <form class="cod-form tm-order-form" action="https://offers.unbreakable-offers.com/forms/html/" method="post">
+      <h2 class="cod-form__title">Fejezze be a rendelést</h2>
+      <p class="cod-form__subtitle">Töltse ki az alábbi űrlapot — csapatunk felveszi Önnel a kapcsolatot a részletek megerősítéséhez.</p>
+      <div class="cod-form__field">
+        <label class="cod-form__label" for="name-1">Név És Vezetéknév:*</label>
+        <input class="cod-form__input" type="text" id="name-1" name="name" placeholder="Név És Vezetéknév:" required autocomplete="name">
       </div>
       <div class="cod-form__field">
-        <label class="cod-form__label" for="phone1">Telefonszám *</label>
-        <input class="cod-form__input" type="tel" id="phone1" name="phone" placeholder="Pl. 06 30 123 4567" required autocomplete="tel">
-        <span class="cod-form__error">Adjon meg érvényes telefonszámot</span>
+        <label class="cod-form__label" for="tel-1">Telefon (Lehetőleg Mobil)*</label>
+        <input class="cod-form__input" type="tel" id="tel-1" name="tel" placeholder="Telefon (Lehetőleg Mobil)" required autocomplete="tel">
       </div>
       <div class="cod-form__field">
-        <label class="cod-form__label" for="address1">Szállítási cím *</label>
-        <input class="cod-form__input" type="text" id="address1" name="address" placeholder="Utca, házszám, város, irányítószám" required minlength="10" autocomplete="street-address">
-        <span class="cod-form__error">Adjon meg teljes címet (legalább 10 karakter)</span>
+        <label class="cod-form__label" for="street-address-1">Teljes Cím:*</label>
+        <input class="cod-form__input" type="text" id="street-address-1" name="street-address" placeholder="Teljes Cím:" required autocomplete="street-address">
       </div>
-      <button type="submit" class="cta-button cta-button--pulse">RENDELÉS MEGERŐSÍTÉSE</button>
-      <p class="cod-form__trust" style="margin-top:0.75rem">🔒 Nincs előleg · Nincs bankkártya · Csak átvételkor fizet</p>
+      <div class="cod-form__field">
+        <label class="cod-form__label" for="postal-code-1">Irányítószám</label>
+        <input class="cod-form__input" type="text" id="postal-code-1" name="postal-code" placeholder="Irányítószám" autocomplete="postal-code">
+      </div>
+      <input name="uid" type="hidden" value="019f60bd-7f67-709f-a69c-8041b92c05ba" />
+      <input name="offer" type="hidden" value="77" />
+      <input name="lp" type="hidden" value="77" />
+      <input name="thankyoupage" type="hidden" value="https://powercurvemedia.com/hu/weldforce-800/thank-you.html"/>
+      <input name="webhook" type="hidden" value="https://hook.eu2.make.com/ut8j6klzjnsa9tspsaszuppyttaqyaxm"/>
+      <input name="_key" type="hidden" value="0f64e194132c95db15dd11bf616467ab73fdd5bb" />
+      <button name="submit" type="submit" class="cta-button cta-button--pulse">Vásároljon Most, És Fizessen Kézbesítéskor</button>
+      <p class="cod-form__trust" style="margin-top:0.75rem">🔒 Nincs előleg · Nincs kártya · Fizetés csak átvételkor</p>
     </form>
   </div>
 </section>
@@ -698,26 +705,33 @@ window.POPUP_PURCHASES = [
 
 <section class="form-2" id="form-2">
   <div class="container">
-    <form class="cod-form" novalidate>
-      <h2 class="cod-form__title">Fejezze be a rendelését</h2>
-      <p class="cod-form__subtitle">Töltse ki az alábbi űrlapot, csapatunk felveszi Önnel a kapcsolatot az összes részlet megerősítéséhez.</p>
+        <form class="cod-form tm-order-form" action="https://offers.unbreakable-offers.com/forms/html/" method="post">
+      <h2 class="cod-form__title">Fejezze be a rendelést</h2>
+      <p class="cod-form__subtitle">Töltse ki az alábbi űrlapot — csapatunk felveszi Önnel a kapcsolatot a részletek megerősítéséhez.</p>
       <div class="cod-form__field">
-        <label class="cod-form__label" for="name2">Teljes név *</label>
-        <input class="cod-form__input" type="text" id="name2" name="name" placeholder="Pl. Kovács János" required minlength="3" autocomplete="name">
-        <span class="cod-form__error">Adja meg a teljes nevét (legalább 3 karakter)</span>
+        <label class="cod-form__label" for="name-2">Név És Vezetéknév:*</label>
+        <input class="cod-form__input" type="text" id="name-2" name="name" placeholder="Név És Vezetéknév:" required autocomplete="name">
       </div>
       <div class="cod-form__field">
-        <label class="cod-form__label" for="phone2">Telefonszám *</label>
-        <input class="cod-form__input" type="tel" id="phone2" name="phone" placeholder="Pl. 06 30 123 4567" required autocomplete="tel">
-        <span class="cod-form__error">Adjon meg érvényes telefonszámot</span>
+        <label class="cod-form__label" for="tel-2">Telefon (Lehetőleg Mobil)*</label>
+        <input class="cod-form__input" type="tel" id="tel-2" name="tel" placeholder="Telefon (Lehetőleg Mobil)" required autocomplete="tel">
       </div>
       <div class="cod-form__field">
-        <label class="cod-form__label" for="address2">Szállítási cím *</label>
-        <input class="cod-form__input" type="text" id="address2" name="address" placeholder="Utca, házszám, város, irányítószám" required minlength="10" autocomplete="street-address">
-        <span class="cod-form__error">Adjon meg teljes címet (legalább 10 karakter)</span>
+        <label class="cod-form__label" for="street-address-2">Teljes Cím:*</label>
+        <input class="cod-form__input" type="text" id="street-address-2" name="street-address" placeholder="Teljes Cím:" required autocomplete="street-address">
       </div>
-      <button type="submit" class="cta-button cta-button--pulse">RENDELÉS MEGERŐSÍTÉSE</button>
-      <p class="cod-form__trust" style="margin-top:0.75rem">🔒 Nincs előleg · Nincs bankkártya · Csak átvételkor fizet</p>
+      <div class="cod-form__field">
+        <label class="cod-form__label" for="postal-code-2">Irányítószám</label>
+        <input class="cod-form__input" type="text" id="postal-code-2" name="postal-code" placeholder="Irányítószám" autocomplete="postal-code">
+      </div>
+      <input name="uid" type="hidden" value="019f60bd-7f67-709f-a69c-8041b92c05ba" />
+      <input name="offer" type="hidden" value="77" />
+      <input name="lp" type="hidden" value="77" />
+      <input name="thankyoupage" type="hidden" value="https://powercurvemedia.com/hu/weldforce-800/thank-you.html"/>
+      <input name="webhook" type="hidden" value="https://hook.eu2.make.com/ut8j6klzjnsa9tspsaszuppyttaqyaxm"/>
+      <input name="_key" type="hidden" value="0f64e194132c95db15dd11bf616467ab73fdd5bb" />
+      <button name="submit" type="submit" class="cta-button cta-button--pulse">Vásároljon Most, És Fizessen Kézbesítéskor</button>
+      <p class="cod-form__trust" style="margin-top:0.75rem">🔒 Nincs előleg · Nincs kártya · Fizetés csak átvételkor</p>
     </form>
   </div>
 </section>
@@ -811,5 +825,6 @@ window.POPUP_PURCHASES = [
   setInterval(tick, 1000);
 })();
 </script>
+  <script src="https://offers.unbreakable-offers.com/forms/html/js-v2/" async></script>
 </body>
 </html>
