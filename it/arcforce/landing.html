@@ -169,6 +169,80 @@
   background: #dc2626;
   flex-shrink: 0;
 }
+/* Recensioni mobile: immagine grande e quadrata come competitor */
+.arcforce-lp .review-card {
+  padding: 0;
+  gap: 0;
+  overflow: hidden;
+}
+.arcforce-lp .review-card__header {
+  gap: 0;
+}
+.arcforce-lp .review-card__avatar {
+  width: 100%;
+  margin: 0;
+  aspect-ratio: 1 / 1;
+  height: auto;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 0;
+  background: #eef2f7;
+}
+.arcforce-lp .review-card__person {
+  display: none;
+}
+.arcforce-lp .review-card__stars,
+.arcforce-lp .review-card__title,
+.arcforce-lp .review-card__text,
+.arcforce-lp .review-card__author {
+  padding-left: var(--space-4);
+  padding-right: var(--space-4);
+}
+.arcforce-lp .review-card__stars {
+  margin-top: var(--space-4);
+  color: #f59e0b;
+  font-size: 1.15rem;
+  letter-spacing: 0.05em;
+}
+.arcforce-lp .review-card__title {
+  margin-top: var(--space-2);
+  font-size: 1.05rem;
+  font-weight: 800;
+  line-height: 1.3;
+}
+.arcforce-lp .review-card__text {
+  margin-top: var(--space-2);
+  color: var(--color-text-muted);
+  font-size: var(--fs-sm);
+  line-height: 1.55;
+}
+.arcforce-lp .review-card__verified { display: none; }
+.arcforce-lp .review-card__author {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  padding-top: var(--space-3);
+  padding-bottom: var(--space-4);
+  margin-top: var(--space-2);
+}
+.arcforce-lp .review-card__author img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+.arcforce-lp .review-card__author-name {
+  font-weight: 700;
+  font-size: var(--fs-sm);
+  color: var(--color-text);
+}
+@media (min-width: 768px) {
+  .arcforce-lp .review-card__avatar {
+    aspect-ratio: 1 / 1;
+    max-height: none;
+  }
+}
 </style>
 <script type="application/ld+json">
 {
@@ -473,51 +547,42 @@ window.POPUP_PURCHASES = [
     <div class="reviews-grid__list">
       <article class="review-card">
         <div class="review-card__header">
-          <img class="review-card__avatar" src="/assets/img/reviews/arcforce/review-1.webp" alt="ArcForce usata su un pezzo in alluminio" width="80" height="80" loading="lazy" decoding="async" onerror="this.src='/assets/img/placeholder.svg'">
-          <div class="review-card__person">
-            <img class="review-card__person-photo" src="/assets/img/reviews/arcforce/popup-1.webp" alt="" width="40" height="40" loading="lazy">
-            <div>
-              <div class="review-card__name">Andrea P.</div>
-              <div class="review-card__location">Milano, Cliente verificato</div>
-            </div>
-          </div>
+          <img class="review-card__avatar" src="/assets/img/reviews/arcforce/review-1.webp" alt="ArcForce usata su un pezzo in alluminio" width="640" height="640" loading="lazy" decoding="async" onerror="this.src='/assets/img/placeholder.svg'">
+          <div class="review-card__person"></div>
         </div>
         <div class="review-card__stars">★★★★★</div>
         <h3 class="review-card__title">Potente e facile anche per chi inizia.</h3>
         <p class="review-card__text">«Molto potente e facile da usare. Ho saldato alluminio e inox senza problemi, pur non avendo molta esperienza.»</p>
-        <span class="review-card__verified">✓ Cliente verificato</span>
+        <div class="review-card__author">
+          <img src="/assets/img/reviews/arcforce/popup-1.webp" alt="" width="40" height="40" loading="lazy">
+          <span class="review-card__author-name">Andrea P. — Milano, Cliente verificato</span>
+        </div>
       </article>
       <article class="review-card">
         <div class="review-card__header">
-          <img class="review-card__avatar" src="/assets/img/reviews/arcforce/review-2.webp" alt="ArcForce collegata a una presa standard in garage" width="80" height="80" loading="lazy" decoding="async" onerror="this.src='/assets/img/placeholder.svg'">
-          <div class="review-card__person">
-            <img class="review-card__person-photo" src="/assets/img/reviews/arcforce/popup-2.webp" alt="" width="40" height="40" loading="lazy">
-            <div>
-              <div class="review-card__name">Michele D.</div>
-              <div class="review-card__location">Torino, Cliente verificato</div>
-            </div>
-          </div>
+          <img class="review-card__avatar" src="/assets/img/reviews/arcforce/review-2.webp" alt="ArcForce collegata a una presa standard in garage" width="640" height="640" loading="lazy" decoding="async" onerror="this.src='/assets/img/placeholder.svg'">
+          <div class="review-card__person"></div>
         </div>
         <div class="review-card__stars">★★★★★</div>
         <h3 class="review-card__title">Pronto all'uso, nessuna installazione industriale.</h3>
         <p class="review-card__text">«Funziona perfettamente con la normale presa da 220V ed è pronto all'uso da subito. Ideale per garage e lavoretti di casa.»</p>
-        <span class="review-card__verified">✓ Cliente verificato</span>
+        <div class="review-card__author">
+          <img src="/assets/img/reviews/arcforce/popup-2.webp" alt="" width="40" height="40" loading="lazy">
+          <span class="review-card__author-name">Michele D. — Torino, Cliente verificato</span>
+        </div>
       </article>
       <article class="review-card">
         <div class="review-card__header">
-          <img class="review-card__avatar" src="/assets/img/reviews/arcforce/review-3.webp" alt="Pulizia laser su un pezzo arrugginito" width="80" height="80" loading="lazy" decoding="async" onerror="this.src='/assets/img/placeholder.svg'">
-          <div class="review-card__person">
-            <img class="review-card__person-photo" src="/assets/img/reviews/arcforce/popup-3.webp" alt="" width="40" height="40" loading="lazy">
-            <div>
-              <div class="review-card__name">Fabio L.</div>
-              <div class="review-card__location">Napoli, Cliente verificato</div>
-            </div>
-          </div>
+          <img class="review-card__avatar" src="/assets/img/reviews/arcforce/review-3.webp" alt="Pulizia laser su un pezzo arrugginito" width="640" height="640" loading="lazy" decoding="async" onerror="this.src='/assets/img/placeholder.svg'">
+          <div class="review-card__person"></div>
         </div>
         <div class="review-card__stars">★★★★★</div>
         <h3 class="review-card__title">La pulizia laser è incredibile.</h3>
         <p class="review-card__text">«La funzione di pulizia laser è sorprendente. La ruggine è sparita in pochissimo tempo dai pezzi vecchi.»</p>
-        <span class="review-card__verified">✓ Cliente verificato</span>
+        <div class="review-card__author">
+          <img src="/assets/img/reviews/arcforce/popup-3.webp" alt="" width="40" height="40" loading="lazy">
+          <span class="review-card__author-name">Fabio L. — Napoli, Cliente verificato</span>
+        </div>
       </article>
     </div>
   </div>
