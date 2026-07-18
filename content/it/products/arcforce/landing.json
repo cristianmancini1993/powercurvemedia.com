@@ -1,0 +1,36 @@
+{
+  "product": {
+    "name": "ArcForce™",
+    "full_name": "ArcForce™ — Saldatrice Professionale 8 in 1",
+    "slug": "arcforce",
+    "price": "129.00",
+    "price_old": "430.00",
+    "discount": "-70%",
+    "currency": "EUR"
+  },
+  "hero": {
+    "badge": "🔥 SOLO OGGI: -70% + PAGAMENTO ALLA CONSEGNA 🔥",
+    "rating": "4,8/5 — Oltre 8.700 recensioni verificate",
+    "title": "Saldatrice Professionale 8 in 1 ⚡ Salda Automaticamente Ogni Materiale",
+    "subtitle": "Oltre 8.700 persone hanno già sostituito i loro vecchi saldatori: un solo dispositivo compatto per saldatura laser, MIG senza gas, TIG e ad elettrodo. Funziona con la normale presa da 220V e salda alluminio, ghisa, acciaio, ferro e inox — anche sott'acqua."
+  },
+  "cta": "SÌ, VOGLIO ArcForce™ →",
+  "form_title": "Completa il tuo ordine",
+  "features": [
+    {
+      "label": "01 — Un solo dispositivo per ogni lavoro",
+      "title": "8 funzioni in un unico dispositivo compatto",
+      "chips": ["Saldatura laser", "MIG senza gas", "TIG ed elettrodo"]
+    },
+    {
+      "label": "02 — Controllo automatico, nessuna installazione industriale",
+      "title": "Il sistema rileva il materiale e regola tutto da solo",
+      "chips": ["Presa standard 220V", "Regolazione automatica", "Adatto ai principianti"]
+    },
+    {
+      "label": "03 — Salda ogni materiale, anche sott'acqua",
+      "title": "Alluminio, ghisa, acciaio, ferro, inox — senza limiti",
+      "chips": ["Materiali difficili", "Uso anche sott'acqua", "Protezione da sovraccarico"]
+    }
+  ]
+}
