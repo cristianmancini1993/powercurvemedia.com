@@ -20,13 +20,13 @@
 <meta property="og:type" content="product">
 <meta property="og:title" content="WeldForce 800™ — Saldatrice 8 in 1 | -70% Solo Oggi">
 <meta property="og:description" content="Saldatrice professionale 8 in 1 senza bombola. Presa 220V, controllo automatico. Pagamento alla consegna.">
-<meta property="og:image" content="https://powercurvemedia.com/assets/img/products/arcforce/hero.png">
+<meta property="og:image" content="https://powercurvemedia.com/assets/img/products/arcforce/hero.png?v=20260718b">
 <meta property="og:url" content="https://powercurvemedia.com/it/weldforce-800/">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preload" as="image" type="image/png" href="/assets/img/products/arcforce/hero.png" fetchpriority="high">
+<link rel="preload" as="image" type="image/png" href="/assets/img/products/arcforce/hero.png?v=20260718b" fetchpriority="high">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&display=swap">
 <link rel="stylesheet" href="/assets/css/variables.css">
 <link rel="stylesheet" href="/assets/css/reset.css">
@@ -124,11 +124,17 @@
   order: 1;
   margin: 0;
   width: 100%;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  aspect-ratio: 1 / 1;
+  background: #f1f5f9;
 }
 .arcforce-lp .feature-benefit__image img {
   width: 100%;
-  height: auto;
-  border-radius: var(--radius-lg);
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 0;
   display: block;
 }
 .arcforce-lp .feature-benefit__inner > div { order: 2; }
@@ -143,6 +149,36 @@
   /* Desktop: testo a sinistra, immagine a destra (come prima) */
   .arcforce-lp .feature-benefit__inner > div { order: 1; }
   .arcforce-lp .feature-benefit__image { order: 2; }
+}
+
+.arcforce-lp .hero-headline__image {
+  max-width: 560px;
+  margin-left: auto;
+  margin-right: auto;
+  aspect-ratio: 1 / 1;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  background: #f1f5f9;
+}
+.arcforce-lp .hero-headline__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+.arcforce-lp .package-content__image {
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  border-radius: var(--radius-lg);
+  background: #f1f5f9;
+}
+.arcforce-lp .package-content__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
 }
 .arcforce-lp .feature-benefit__label {
   background: transparent;
@@ -243,7 +279,7 @@
   "@context": "https://schema.org",
   "@type": "Product",
   "name": "WeldForce 800™ — Saldatrice Professionale 8 in 1",
-  "image": "https://powercurvemedia.com/assets/img/products/arcforce/hero.png",
+  "image": "https://powercurvemedia.com/assets/img/products/arcforce/hero.png?v=20260718b",
   "description": "Saldatrice professionale 8 in 1: laser, MIG senza gas, TIG, elettrodo, punti e taglio. Funziona con presa 220V. Salda alluminio, ghisa, acciaio, ferro e inox.",
   "brand": { "@type": "Brand", "name": "WeldForce 800" },
   "offers": {
@@ -318,7 +354,7 @@ window.POPUP_PURCHASES = [
     <h1 class="hero-headline__title">Saldatrice Professionale 8 in 1 ⚡ Salda Automaticamente Ogni Materiale</h1>
     <p class="hero-headline__subtitle">Oltre 8.700 persone hanno già sostituito i loro vecchi saldatori: un solo dispositivo compatto per saldatura laser, MIG senza gas, TIG e ad elettrodo. <strong>Funziona con la normale presa da 220V</strong> e salda alluminio, ghisa, acciaio, ferro e inox — anche sott'acqua.</p>
     <div class="hero-headline__image">
-      <img src="/assets/img/products/arcforce/hero.png" alt="WeldForce 800™ — saldatrice professionale 8 in 1 senza bombola" title="WeldForce 800™ Saldatrice 8 in 1" width="520" height="400" loading="eager" fetchpriority="high" decoding="async" onerror="this.src='/assets/img/placeholder.svg'">
+      <img src="/assets/img/products/arcforce/hero.png?v=20260718b" alt="WeldForce 800™ — saldatrice professionale 8 in 1 senza bombola" title="WeldForce 800™ Saldatrice 8 in 1" width="1024" height="1024" loading="eager" fetchpriority="high" decoding="async" onerror="this.src='/assets/img/placeholder.svg'">
     </div>
   </div>
 </section>
@@ -417,7 +453,7 @@ window.POPUP_PURCHASES = [
   <div class="container">
     <div class="feature-benefit__inner">
       <figure class="feature-benefit__image">
-        <img src="/assets/img/products/arcforce/feature-1.png" alt="Saldatrice 8 in 1 con funzioni multiple" width="540" height="400" loading="lazy" decoding="async" onerror="this.src='/assets/img/placeholder.svg'">
+        <img src="/assets/img/products/arcforce/feature-1.png?v=20260718b" alt="Saldatrice 8 in 1 con funzioni multiple" width="1024" height="1024" loading="lazy" decoding="async" onerror="this.src='/assets/img/placeholder.svg'">
       </figure>
       <div>
         <span class="feature-benefit__label">01 — Un solo dispositivo per ogni lavoro</span>
@@ -441,7 +477,7 @@ window.POPUP_PURCHASES = [
   <div class="container">
     <div class="feature-benefit__inner">
       <figure class="feature-benefit__image">
-        <img src="/assets/img/products/arcforce/feature-2.png" alt="Sistema di controllo automatico presa 220V" width="540" height="400" loading="lazy" decoding="async" onerror="this.src='/assets/img/placeholder.svg'">
+        <img src="/assets/img/products/arcforce/feature-2.png?v=20260718b" alt="Sistema di controllo automatico presa 220V" width="1024" height="1024" loading="lazy" decoding="async" onerror="this.src='/assets/img/placeholder.svg'">
       </figure>
       <div>
         <span class="feature-benefit__label">02 — Controllo automatico, nessuna installazione industriale</span>
@@ -465,7 +501,7 @@ window.POPUP_PURCHASES = [
   <div class="container">
     <div class="feature-benefit__inner">
       <figure class="feature-benefit__image">
-        <img src="/assets/img/products/arcforce/feature-3.png" alt="Saldatura su alluminio acciaio e inox anche sott'acqua" width="540" height="400" loading="lazy" decoding="async" onerror="this.src='/assets/img/placeholder.svg'">
+        <img src="/assets/img/products/arcforce/feature-3.png?v=20260718b" alt="Saldatura su alluminio acciaio e inox anche sott'acqua" width="1024" height="1024" loading="lazy" decoding="async" onerror="this.src='/assets/img/placeholder.svg'">
       </figure>
       <div>
         <span class="feature-benefit__label">03 — Salda ogni materiale, anche sott'acqua</span>
@@ -541,7 +577,7 @@ window.POPUP_PURCHASES = [
     <div class="reviews-grid__list">
       <article class="review-card">
         <div class="review-card__header">
-          <img class="review-card__avatar" src="/assets/img/reviews/arcforce/review-1.png" alt="WeldForce 800 usata su un pezzo in alluminio" width="640" height="640" loading="lazy" decoding="async" onerror="this.src='/assets/img/placeholder.svg'">
+          <img class="review-card__avatar" src="/assets/img/reviews/arcforce/review-1.png?v=20260718b" alt="WeldForce 800 usata su un pezzo in alluminio" width="640" height="640" loading="lazy" decoding="async" onerror="this.src='/assets/img/placeholder.svg'">
           <div class="review-card__person"></div>
         </div>
         <div class="review-card__stars">★★★★★</div>
@@ -553,7 +589,7 @@ window.POPUP_PURCHASES = [
 </article>
       <article class="review-card">
         <div class="review-card__header">
-          <img class="review-card__avatar" src="/assets/img/reviews/arcforce/review-2.png" alt="WeldForce 800 collegata a una presa standard in garage" width="640" height="640" loading="lazy" decoding="async" onerror="this.src='/assets/img/placeholder.svg'">
+          <img class="review-card__avatar" src="/assets/img/reviews/arcforce/review-2.png?v=20260718b" alt="WeldForce 800 collegata a una presa standard in garage" width="640" height="640" loading="lazy" decoding="async" onerror="this.src='/assets/img/placeholder.svg'">
           <div class="review-card__person"></div>
         </div>
         <div class="review-card__stars">★★★★★</div>
@@ -565,7 +601,7 @@ window.POPUP_PURCHASES = [
 </article>
       <article class="review-card">
         <div class="review-card__header">
-          <img class="review-card__avatar" src="/assets/img/reviews/arcforce/review-3.png" alt="Pulizia laser su un pezzo arrugginito" width="640" height="640" loading="lazy" decoding="async" onerror="this.src='/assets/img/placeholder.svg'">
+          <img class="review-card__avatar" src="/assets/img/reviews/arcforce/review-3.png?v=20260718b" alt="Pulizia laser su un pezzo arrugginito" width="640" height="640" loading="lazy" decoding="async" onerror="this.src='/assets/img/placeholder.svg'">
           <div class="review-card__person"></div>
         </div>
         <div class="review-card__stars">★★★★★</div>
@@ -585,7 +621,7 @@ window.POPUP_PURCHASES = [
     <h2 class="section__title">Kit completo WeldForce 800™, pronto all'uso</h2>
     <div class="package-content__inner">
       <figure class="package-content__image">
-        <img src="/assets/img/products/arcforce/package.png" alt="Kit completo WeldForce 800" width="640" height="480" loading="lazy" decoding="async" onerror="this.src='/assets/img/placeholder.svg'">
+        <img src="/assets/img/products/arcforce/package.png?v=20260718b" alt="Kit completo WeldForce 800" width="1024" height="1024" loading="lazy" decoding="async" onerror="this.src='/assets/img/placeholder.svg'">
       </figure>
       <ul class="package-content__list">
         <li>Saldatrice 8 in 1 — laser, MIG senza gas, TIG, elettrodo, punti e taglio</li>
