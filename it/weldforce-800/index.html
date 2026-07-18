@@ -212,12 +212,10 @@
 }
 .arcforce-lp .review-card__text {
   margin-top: var(--space-2);
-  margin-bottom: var(--space-4);
   color: var(--color-text-muted);
   font-size: var(--fs-sm);
   line-height: 1.55;
 }
-.arcforce-lp .review-card__author { display: none !important; }
 .arcforce-lp .review-card__verified { display: none; }
 .arcforce-lp .review-card__author {
   display: flex;
@@ -227,13 +225,7 @@
   padding-bottom: var(--space-4);
   margin-top: var(--space-2);
 }
-.arcforce-lp .review-card__author img {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  object-fit: cover;
-  flex-shrink: 0;
-}
+.arcforce-lp .review-card__author img { display: none !important; }
 .arcforce-lp .review-card__author-name {
   font-weight: 700;
   font-size: var(--fs-sm);
@@ -555,6 +547,9 @@ window.POPUP_PURCHASES = [
         <div class="review-card__stars">★★★★★</div>
         <h3 class="review-card__title">Potente e facile anche per chi inizia.</h3>
         <p class="review-card__text">«Mi aspettavo qualcosa di complicato, invece dopo due prove ho chiuso un pezzo in alluminio e uno in inox. Potenza buona e comandi chiari.»</p>
+        <div class="review-card__author">
+          <span class="review-card__author-name">Andrea P. — Milano, Cliente verificato</span>
+        </div>
 </article>
       <article class="review-card">
         <div class="review-card__header">
@@ -564,6 +559,9 @@ window.POPUP_PURCHASES = [
         <div class="review-card__stars">★★★★★</div>
         <h3 class="review-card__title">Pronto all'uso, nessuna installazione industriale.</h3>
         <p class="review-card__text">«L'ho collegata alla presa del garage e in cinque minuti stavo già lavorando. Nessuna installazione strana: perfetta per i lavoretti di casa.»</p>
+        <div class="review-card__author">
+          <span class="review-card__author-name">Michele D. — Torino, Cliente verificato</span>
+        </div>
 </article>
       <article class="review-card">
         <div class="review-card__header">
@@ -573,6 +571,9 @@ window.POPUP_PURCHASES = [
         <div class="review-card__stars">★★★★★</div>
         <h3 class="review-card__title">La pulizia laser è incredibile.</h3>
         <p class="review-card__text">«Sui pezzi arrugginiti la pulizia laser fa la differenza: in pochi minuti la superficie torna lavorabile, senza stare ore con la spazzola.»</p>
+        <div class="review-card__author">
+          <span class="review-card__author-name">Fabio L. — Napoli, Cliente verificato</span>
+        </div>
 </article>
     </div>
   </div>
