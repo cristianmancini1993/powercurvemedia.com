@@ -1,0 +1,19 @@
+{
+  "product": {
+    "name": "WeldForce 800™",
+    "full_name": "WeldForce 800™ — Profesjonalna spawarka 8 w 1",
+    "slug": "weldforce-800",
+    "price": "439",
+    "price_old": "1.463 zł",
+    "discount": "-70%",
+    "currency": "PLN"
+  },
+  "hero": {
+    "badge": "🔥 TYLKO DZIŚ: -70% + PŁATNOŚĆ PRZY ODBIORZE 🔥",
+    "title": "Profesjonalna spawarka 8 w 1 ⚡ Spawa automatycznie każdy materiał",
+    "subtitle": "Ponad 8.700 osób już wymieniło stare spawarki: jedno kompaktowe urządzenie do spawania laserowego, MIG bez gazu, TIG i elektrodą. Działa ze zwykłego gniazdka 220V i spawa aluminium, żeliwo, stal, żelazo i inox — nawet pod wodą."
+  },
+  "cta": "TAK, CHCĘ WeldForce 800™ →",
+  "form_title": "Dokończ zamówienie",
+  "cpa": 21
+}

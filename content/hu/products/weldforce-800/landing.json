@@ -1,0 +1,19 @@
+{
+  "product": {
+    "name": "WeldForce 800™",
+    "full_name": "WeldForce 800™ — Professzionális 8 az 1-ben hegesztő",
+    "slug": "weldforce-800",
+    "price": "36999",
+    "price_old": "123.330 Ft",
+    "discount": "-70%",
+    "currency": "HUF"
+  },
+  "hero": {
+    "badge": "🔥 CSAK MA: -70% + FIZETÉS ÁTVÉTELKOR 🔥",
+    "title": "Professzionális 8 az 1-ben hegesztő ⚡ Automatikusan hegeszt minden anyagot",
+    "subtitle": "Több mint 8.700 ember cserélte már le a régi hegesztőjét: egy kompakt készülék lézerhegesztéshez, gáz nélküli MIG-hez, TIG-hez és elektródához. A szokásos 220V-os aljzattal működik, és alumíniumot, öntöttvasat, acélt, vasat és inoxot hegeszt — akár víz alatt is."
+  },
+  "cta": "IGEN, KÉREM a WeldForce 800™-at →",
+  "form_title": "Fejezze be a rendelését",
+  "cpa": 21
+}

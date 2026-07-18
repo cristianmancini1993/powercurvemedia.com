@@ -1,0 +1,19 @@
+{
+  "product": {
+    "name": "WeldForce 800™",
+    "full_name": "WeldForce 800™ — Aparat de sudură profesional 8 în 1",
+    "slug": "weldforce-800",
+    "price": "549",
+    "price_old": "1.830 RON",
+    "discount": "-70%",
+    "currency": "RON"
+  },
+  "hero": {
+    "badge": "🔥 DOAR AZI: -70% + PLATA LA LIVRARE 🔥",
+    "title": "Aparat de sudură profesional 8 în 1 ⚡ Sudează automat orice material",
+    "subtitle": "Peste 8.700 de persoane și-au înlocuit deja vechile aparate de sudură: un singur dispozitiv compact pentru sudură laser, MIG fără gaz, TIG și electrod. Funcționează la priza normală de 220V și sudează aluminiu, fontă, oțel, fier și inox — chiar și sub apă."
+  },
+  "cta": "DA, VREAU WeldForce 800™ →",
+  "form_title": "Finalizează comanda",
+  "cpa": 19
+}

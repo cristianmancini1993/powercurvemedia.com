@@ -1,0 +1,19 @@
+{
+  "product": {
+    "name": "WeldForce 800™",
+    "full_name": "WeldForce 800™ — Profesionální svářečka 8 v 1",
+    "slug": "weldforce-800",
+    "price": "2449",
+    "price_old": "8.163 Kč",
+    "discount": "-70%",
+    "currency": "CZK"
+  },
+  "hero": {
+    "badge": "🔥 JEN DNES: -70% + PLATBA NA DOBÍRKU 🔥",
+    "title": "Profesionální svářečka 8 v 1 ⚡ Automaticky svaří každý materiál",
+    "subtitle": "Více než 8.700 lidí už vyměnilo své staré svářečky: jedno kompaktní zařízení pro laserové svařování, MIG bez plynu, TIG a elektrodu. Funguje z běžné zásuvky 220V a svařuje hliník, litinu, ocel, železo a inox — i pod vodou."
+  },
+  "cta": "ANO, CHCI WeldForce 800™ →",
+  "form_title": "Dokončete objednávku",
+  "cpa": 21
+}

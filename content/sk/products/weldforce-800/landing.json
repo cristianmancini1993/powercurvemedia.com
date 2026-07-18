@@ -1,0 +1,19 @@
+{
+  "product": {
+    "name": "WeldForce 800™",
+    "full_name": "WeldForce 800™ — Profesionálna zváračka 8 v 1",
+    "slug": "weldforce-800",
+    "price": "99.99",
+    "price_old": "333 €",
+    "discount": "-70%",
+    "currency": "EUR"
+  },
+  "hero": {
+    "badge": "🔥 LEN DNES: -70% + PLATBA NA DOBIERKU 🔥",
+    "title": "Profesionálna zváračka 8 v 1 ⚡ Automaticky zvára každý materiál",
+    "subtitle": "Viac ako 8.700 ľudí už vymenilo svoje staré zváračky: jedno kompaktné zariadenie na laserové zváranie, MIG bez plynu, TIG a elektródu. Funguje z bežnej zásuvky 220V a zvára hliník, liatinu, oceľ, železo a inox — aj pod vodou."
+  },
+  "cta": "ÁNO, CHCEM WeldForce 800™ →",
+  "form_title": "Dokončite objednávku",
+  "cpa": 21
+}

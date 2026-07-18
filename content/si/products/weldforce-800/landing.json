@@ -1,0 +1,19 @@
+{
+  "product": {
+    "name": "WeldForce 800™",
+    "full_name": "WeldForce 800™ — Profesionalni varilec 8 v 1",
+    "slug": "weldforce-800",
+    "price": "99.99",
+    "price_old": "333 €",
+    "discount": "-70%",
+    "currency": "EUR"
+  },
+  "hero": {
+    "badge": "🔥 SAMO DANES: -70% + PLAČILO OB DOSTAVI 🔥",
+    "title": "Profesionalni varilec 8 v 1 ⚡ Samodejno vari vsak material",
+    "subtitle": "Več kot 8.700 ljudi je že zamenjalo stare varilce: ena kompaktna naprava za lasersko varjenje, MIG brez plina, TIG in elektrodo. Deluje na običajni vtičnici 220V in vari aluminij, litino, jeklo, železo in inox — tudi pod vodo."
+  },
+  "cta": "DA, ŽELIM WeldForce 800™ →",
+  "form_title": "Dokončajte naročilo",
+  "cpa": 19
+}
