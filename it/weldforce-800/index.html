@@ -180,6 +180,30 @@
   object-position: center;
   display: block;
 }
+
+.arcforce-lp .cod-form {
+  border: 2px solid var(--color-primary);
+  box-shadow: none;
+  padding: var(--space-6) var(--space-5);
+}
+.arcforce-lp .cod-form__title {
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+.arcforce-lp .cod-form__input {
+  border-width: 1px;
+  border-color: #e2e8f0;
+  padding: 0.85rem 1rem;
+}
+.arcforce-lp .cod-form button[type="submit"] {
+  width: 100%;
+  margin-top: var(--space-2);
+  font-size: 1rem;
+  letter-spacing: 0.02em;
+}
+.arcforce-lp .cod-form__trust {
+  margin-top: 0.75rem;
+}
 .arcforce-lp .feature-benefit__label {
   background: transparent;
   color: #dc2626;
@@ -418,17 +442,7 @@ window.POPUP_PURCHASES = [
     <form class="cod-form" novalidate>
       <h2 class="cod-form__title">Completa il tuo ordine</h2>
       <p class="cod-form__subtitle">Compila il modulo qui sotto, il nostro team ti contatterà per confermare tutti i dettagli.</p>
-      <ul class="cod-form__social-proof" aria-live="polite">
-        <li class="cod-form__social-proof-item cod-form__social-proof-item--neutral">
-          <span class="cod-form__social-proof-icon" aria-hidden="true">👁</span>
-          <span>Attualmente <strong>38 persone</strong> stanno visualizzando questo prodotto</span>
-        </li>
-        <li class="cod-form__social-proof-item cod-form__social-proof-item--urgent">
-          <span class="cod-form__social-proof-icon" aria-hidden="true">🔥</span>
-          <span>Offerta <strong>-70%</strong> valida solo fino a esaurimento scorte</span>
-        </li>
-      </ul>
-      <div class="cod-form__field">
+<div class="cod-form__field">
         <label class="cod-form__label" for="name1">Nome e cognome *</label>
         <input class="cod-form__input" type="text" id="name1" name="name" placeholder="Es. Mario Rossi" required minlength="3" autocomplete="name">
         <span class="cod-form__error">Inserisci nome e cognome (almeno 3 caratteri)</span>
@@ -443,7 +457,7 @@ window.POPUP_PURCHASES = [
         <input class="cod-form__input" type="text" id="address1" name="address" placeholder="Via, civico, città, CAP" required minlength="10" autocomplete="street-address">
         <span class="cod-form__error">Inserisci un indirizzo completo (almeno 10 caratteri)</span>
       </div>
-      <button type="submit" class="cta-button cta-button--pulse">CONFERMA L'ORDINE — 129€</button>
+      <button type="submit" class="cta-button cta-button--pulse">CONFERMA L'ORDINE</button>
       <p class="cod-form__trust" style="margin-top:0.75rem">🔒 Nessun anticipo · Nessuna carta · Paghi solo alla consegna</p>
     </form>
   </div>
@@ -666,7 +680,7 @@ window.POPUP_PURCHASES = [
         <input class="cod-form__input" type="text" id="address2" name="address" placeholder="Via, civico, città, CAP" required minlength="10" autocomplete="street-address">
         <span class="cod-form__error">Inserisci un indirizzo completo (almeno 10 caratteri)</span>
       </div>
-      <button type="submit" class="cta-button cta-button--pulse">CONFERMA L'ORDINE — 129€</button>
+      <button type="submit" class="cta-button cta-button--pulse">CONFERMA L'ORDINE</button>
       <p class="cod-form__trust" style="margin-top:0.75rem">🔒 Nessun anticipo · Nessuna carta · Paghi solo alla consegna</p>
     </form>
   </div>
