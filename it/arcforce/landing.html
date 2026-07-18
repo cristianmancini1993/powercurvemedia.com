@@ -110,6 +110,54 @@
   color: var(--color-text-muted);
 }
 .watching-now strong { color: var(--color-urgency); }
+
+.arcforce-lp .feature-benefit__inner {
+  display: flex !important;
+  flex-direction: column !important;
+  grid-template-columns: none !important;
+  direction: ltr !important;
+  gap: var(--space-5);
+  max-width: 720px;
+  margin: 0 auto;
+}
+.arcforce-lp .feature-benefit__inner > * { direction: ltr !important; }
+.arcforce-lp .feature-benefit__image {
+  order: 1;
+  margin: 0;
+  width: 100%;
+}
+.arcforce-lp .feature-benefit__image img {
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius-lg);
+  display: block;
+}
+.arcforce-lp .feature-benefit__inner > div { order: 2; }
+.arcforce-lp .feature-benefit__label {
+  background: transparent;
+  color: #dc2626;
+  padding: 0;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  font-size: var(--fs-sm);
+}
+.arcforce-lp .feature-chips span {
+  background: #fff;
+  border: 1px solid var(--color-border);
+  color: var(--color-text);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+.arcforce-lp .feature-chips span::before {
+  content: '';
+  width: 0.45rem;
+  height: 0.45rem;
+  border-radius: 50%;
+  background: #dc2626;
+  flex-shrink: 0;
+}
 </style>
 <script type="application/ld+json">
 {
@@ -163,7 +211,7 @@ window.POPUP_PURCHASES = [
 <script src="/assets/js/form-handler.js" defer></script>
 <script src="/assets/js/popup-purchases.js" defer></script>
 </head>
-<body>
+<body class="arcforce-lp">
 
 <header class="banner-urgency">
   <div class="banner-urgency__main">🔥 SOLO OGGI: -70% + PAGAMENTO ALLA CONSEGNA 🔥</div>
@@ -289,6 +337,9 @@ window.POPUP_PURCHASES = [
 <section class="feature-benefit feature-1">
   <div class="container">
     <div class="feature-benefit__inner">
+      <figure class="feature-benefit__image">
+        <img src="/assets/img/products/arcforce/feature-1.webp" alt="Saldatrice 8 in 1 con funzioni multiple" width="540" height="400" loading="lazy" decoding="async" onerror="this.src='/assets/img/placeholder.svg'">
+      </figure>
       <div>
         <span class="feature-benefit__label">01 — Un solo dispositivo per ogni lavoro</span>
         <h2 class="feature-benefit__title">8 funzioni in un unico dispositivo compatto</h2>
@@ -300,9 +351,6 @@ window.POPUP_PURCHASES = [
         <p class="feature-benefit__text">Saldatura laser, MIG senza gas, TIG, ad elettrodo, a punti e persino il taglio: tutto in un unico dispositivo compatto. Include anche una funzione di <strong>pulizia laser</strong> che rimuove ruggine, vernice e ossidazione da superfici metalliche e pezzi meccanici.</p>
         <p class="feature-benefit__text">Niente più armadi pieni di attrezzature diverse: un dispositivo solo per ogni tipo di lavoro.</p>
       </div>
-      <figure class="feature-benefit__image">
-        <img src="/assets/img/products/arcforce/feature-1.webp" alt="Saldatrice 8 in 1 con funzioni multiple" width="540" height="400" loading="lazy" decoding="async" onerror="this.src='/assets/img/placeholder.svg'">
-      </figure>
     </div>
     <div class="section-cta">
       <a href="#form-2" class="cta-button cta-button--orange">SÌ, VOGLIO ArcForce™ →</a>
@@ -313,6 +361,9 @@ window.POPUP_PURCHASES = [
 <section class="feature-benefit feature-2">
   <div class="container">
     <div class="feature-benefit__inner">
+      <figure class="feature-benefit__image">
+        <img src="/assets/img/products/arcforce/feature-2.webp" alt="Sistema di controllo automatico presa 220V" width="540" height="400" loading="lazy" decoding="async" onerror="this.src='/assets/img/placeholder.svg'">
+      </figure>
       <div>
         <span class="feature-benefit__label">02 — Controllo automatico, nessuna installazione industriale</span>
         <h2 class="feature-benefit__title">Il sistema rileva il materiale e regola tutto da solo</h2>
@@ -324,9 +375,6 @@ window.POPUP_PURCHASES = [
         <p class="feature-benefit__text">Il sistema elettronico riconosce il tipo di lavorazione e regola in automatico potenza, corrente e velocità di avanzamento del filo, evitando errori anche a chi non ha esperienza. Non serve corrente industriale né un impianto trifase: basta la <strong>normale presa da 220V</strong>, a casa, in garage o in officina.</p>
         <p class="feature-benefit__text">Colleghi la spina e inizi subito a lavorare.</p>
       </div>
-      <figure class="feature-benefit__image">
-        <img src="/assets/img/products/arcforce/feature-2.webp" alt="Sistema di controllo automatico presa 220V" width="540" height="400" loading="lazy" decoding="async" onerror="this.src='/assets/img/placeholder.svg'">
-      </figure>
     </div>
     <div class="section-cta">
       <a href="#form-2" class="cta-button cta-button--orange">SÌ, VOGLIO ArcForce™ →</a>
@@ -337,6 +385,9 @@ window.POPUP_PURCHASES = [
 <section class="feature-benefit feature-3">
   <div class="container">
     <div class="feature-benefit__inner">
+      <figure class="feature-benefit__image">
+        <img src="/assets/img/products/arcforce/feature-3.webp" alt="Saldatura su alluminio acciaio e inox anche sott'acqua" width="540" height="400" loading="lazy" decoding="async" onerror="this.src='/assets/img/placeholder.svg'">
+      </figure>
       <div>
         <span class="feature-benefit__label">03 — Salda ogni materiale, anche sott'acqua</span>
         <h2 class="feature-benefit__title">Alluminio, ghisa, acciaio, ferro, inox — senza limiti</h2>
@@ -348,9 +399,6 @@ window.POPUP_PURCHASES = [
         <p class="feature-benefit__text">Progettato per lavorare anche in condizioni estreme, dove i saldatori tradizionali non riescono a funzionare: <strong>sott'acqua compreso</strong>. I sistemi integrati di protezione da sovraccarico e surriscaldamento garantiscono un utilizzo sicuro in ogni lavorazione.</p>
         <p class="feature-benefit__text">Il kit include pinze, cavi e tutti gli accessori: pronto all'uso senza costi aggiuntivi.</p>
       </div>
-      <figure class="feature-benefit__image">
-        <img src="/assets/img/products/arcforce/feature-3.webp" alt="Saldatura su alluminio acciaio e inox anche sott'acqua" width="540" height="400" loading="lazy" decoding="async" onerror="this.src='/assets/img/placeholder.svg'">
-      </figure>
     </div>
     <div class="section-cta">
       <a href="#form-2" class="cta-button cta-button--orange">SÌ, VOGLIO ArcForce™ →</a>
