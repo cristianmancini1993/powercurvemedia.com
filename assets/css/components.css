@@ -670,3 +670,5 @@
   color: #94a3b8;
 }
 .site-footer__bottom strong { color: #cbd5e1; }
+.site-footer__bottom a { color: #cbd5e1; text-decoration: none; }
+.site-footer__bottom a:hover { color: #fff; text-decoration: underline; }
