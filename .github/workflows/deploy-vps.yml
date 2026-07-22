@@ -1,0 +1,27 @@
+name: Deploy to VPS
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+concurrency:
+  group: deploy-powercurvemedia-vps
+  cancel-in-progress: true
+
+jobs:
+  sync-vps:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Sync site to production VPS
+        uses: easingthemes/ssh-deploy@v5.1.0
+        env:
+          SSH_PRIVATE_KEY: ${{ secrets.SSH_KEY }}
+          REMOTE_HOST: ${{ secrets.SSH_HOST }}
+          REMOTE_USER: ${{ secrets.SSH_USER }}
+          REMOTE_PORT: ${{ secrets.SSH_PORT || 22 }}
+          SOURCE: ./
+          TARGET: ${{ secrets.SSH_TARGET }}
+          EXCLUDE: '/.git/, /.github/, /content/, /scripts/, /README.md, /.cursor/'
+          ARGS: -rltgoDzv --delete
