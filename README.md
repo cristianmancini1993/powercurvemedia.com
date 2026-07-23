@@ -110,14 +110,9 @@ The 5 policy files are template-grade. Have a lawyer review them — especially 
 
 ## Deployment
 
-This site is **100% static**. Deploy by uploading the entire `/powercurvemedia.com/` folder to any static host:
+This site is **100% static**. No build step, no CI deploy, no GitHub Pages.
 
-- **Cloudflare Pages**: connect a Git repo or drag-drop the folder. Done.
-- **Netlify**: drag-drop into the Netlify dashboard, or `netlify deploy`.
-- **Hostinger / cPanel hosting**: upload via FTP/SFTP to `public_html/`.
-- **Vercel**: `vercel --prod` from the root folder.
-
-No build step required. No server runtime. Pure HTML/CSS/JS.
+Flow: push to `main` → `git pull` on the VPS. Production is updated manually on the server.
 
 ## Adding more products
 
