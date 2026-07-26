@@ -69,7 +69,7 @@
 .arcticplus-lp .rating-strip .rating-text strong { color: var(--color-text); }
 
 .arcticplus-lp .hero {
-  padding: 22px 0 12px;
+  padding-block: 22px 12px;
   text-align: center;
 }
 
@@ -225,7 +225,7 @@
   font-weight: 800;
 }
 
-.arcticplus-lp .reasons-section { padding: 30px 0; }
+.arcticplus-lp .reasons-section { padding-block: 30px; }
 
 .arcticplus-lp .reason-list { display: grid; gap: 14px; }
 
@@ -311,7 +311,7 @@
 
 .arcticplus-lp .t-card .who .loc { font-size: 12px; color: var(--color-text-muted); }
 
-.arcticplus-lp .kit-section { padding: 34px 0; }
+.arcticplus-lp .kit-section { padding-block: 34px; }
 
 .arcticplus-lp .kit-box {
   background: #fff;
@@ -519,7 +519,7 @@
   border-color: var(--color-highlight);
 }
 
-.arcticplus-lp .faq { padding: 30px 0 42px; }
+.arcticplus-lp .faq { padding-block: 30px 42px; }
 
 .arcticplus-lp .faq-item { border-bottom: 1px solid var(--color-border); }
 
