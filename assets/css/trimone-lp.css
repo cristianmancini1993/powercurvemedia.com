@@ -1,0 +1,40 @@
+/* TrimOne™ — garden tool theme overrides on arcticplus layout */
+.trimone-lp {
+  --color-highlight: #16a34a;
+  --color-blue-bg: #ecfdf5;
+  --color-accent: #dc2626;
+  --color-accent-dark: #b91c1c;
+}
+
+.trimone-lp .reason-card .num {
+  background: var(--color-highlight);
+}
+
+.trimone-lp .gift-strip {
+  background: var(--color-blue-bg);
+  color: var(--color-highlight);
+}
+
+.trimone-lp .eyebrow {
+  color: var(--color-highlight);
+}
+
+.trimone-lp .hero h1 {
+  color: #000;
+  font-weight: 900;
+}
+
+.trimone-lp .hero h1 .hl {
+  color: #000;
+  font-weight: 900;
+}
+
+/* Avatar recensioni — volto centrato nel cerchio */
+.trimone-lp .t-card .face {
+  object-fit: cover;
+  object-position: center 20%;
+}
+
+.trimone-lp .t-card .face--marco {
+  object-position: center 35%;
+}
