@@ -17,7 +17,6 @@ WEBHOOK = "https://hook.eu2.make.com/ut8j6klzjnsa9tspsaszuppyttaqyaxm"
 UID = "019f60bd-7f67-709f-a69c-8041b92c05ba"
 FORM_ACTION = "https://offers.unbreakable-offers.com/forms/html/"
 UNBREAKABLE_JS = "https://offers.unbreakable-offers.com/forms/html/js-v2/"
-TMFP_SCRIPT = "https://offers.unbreakable-offers.com/forms/tmfp/"
 CONVERSION_SEND_TO = "AW-18294109732/3Pa8COOx7dUcEOv3tatE"
 
 GEOS = [
@@ -173,12 +172,12 @@ def build_form_html(g: dict, tr: dict) -> str:
         f'        <input name="lp" type="hidden" value="{offer}" />\n'
         f'        <input name="thankyoupage" type="hidden" value="{thankyou}"/>\n'
         f'        <input name="webhook" type="hidden" value="{WEBHOOK}"/>\n'
+        f'        <input name="tmfp" type="hidden" value="" />\n'
         f'        <input name="_key" type="hidden" value="{g["key"]}" />\n'
         f'        <div style="margin-top: 10px; text-align: center">\n'
         f'          <button name="submit" type="submit" class="cta-btn">{tr["cta_form"]}</button>\n'
         f'        </div>\n'
         f'        <p class="form-note">{tr["form_note"]}</p>\n'
-        f'        <script src="{UNBREAKABLE_JS}" async></script>\n'
         f"      </form>"
     )
 
@@ -468,7 +467,7 @@ def apply_landing(html: str, g: dict, tr: dict) -> str:
     html = html.replace(
         '<script src="/assets/js/onestart-landing-it.js" defer></script>',
         '<script src="/assets/js/onestart-landing.js" defer></script>\n'
-        f'<script src="{TMFP_SCRIPT}" crossorigin="anonymous" defer></script>',
+        f'<script src="{UNBREAKABLE_JS}" defer></script>',
     )
 
     cmp_old = re.search(r'<section class="compare wrap">.*?</section>', html, re.S)

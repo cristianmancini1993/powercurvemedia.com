@@ -654,7 +654,7 @@ def apply_index(html: str, g: dict, tr: dict) -> str:
     )
     html = html.replace(
         '<input name="_key" type="hidden" value="TODO" />',
-        f'<input name="_key" type="hidden" value="{g["key"]}" />',
+        f'<input name="tmfp" type="hidden" value="" />\n        <input name="_key" type="hidden" value="{g["key"]}" />',
     )
 
     kit_old = re.search(r"<ul>\n(?:        <li>.*\n)+      </ul>", html, re.S)
