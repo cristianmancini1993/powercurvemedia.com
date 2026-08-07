@@ -17,36 +17,43 @@ WEBHOOK = "https://hook.eu2.make.com/ut8j6klzjnsa9tspsaszuppyttaqyaxm"
 UID = "019f60bd-7f67-709f-a69c-8041b92c05ba"
 FORM_ACTION = "https://offers.unbreakable-offers.com/forms/html/"
 UNBREAKABLE_JS = "https://offers.unbreakable-offers.com/forms/html/js-v2/"
+TMFP_SCRIPT = "https://offers.unbreakable-offers.com/forms/tmfp/"
 CONVERSION_SEND_TO = "AW-18294109732/3Pa8COOx7dUcEOv3tatE"
 
 GEOS = [
     {
         "geo": "pl", "lang": "pl", "offer": "172",
+        "key": "d364a21b82734088cce05e459b8940c5531bd5dc",
         "price": 299, "currency": "PLN",
         "was": "999 zł", "now": "299 zł", "save": "700 zł", "cpa": 19,
     },
     {
         "geo": "sk", "lang": "sk", "offer": "173",
+        "key": "58bfd9cea9584836e1db2573208dd8c694e0c64f",
         "price": 69.99, "currency": "EUR",
         "was": "249,99 €", "now": "69,99 €", "save": "180 €", "cpa": 19,
     },
     {
         "geo": "hu", "lang": "hu", "offer": "174",
+        "key": "1bb118a445cb0838b13410e1303777e7cafc7fe5",
         "price": 25999, "currency": "HUF",
         "was": "84.999 Ft", "now": "25.999 Ft", "save": "59.000 Ft", "cpa": 19,
     },
     {
         "geo": "si", "lang": "sl", "offer": "175",
+        "key": "bea38e323f18979798be2320cd957841f4482b24",
         "price": 69.99, "currency": "EUR",
         "was": "249,99 €", "now": "69,99 €", "save": "180 €", "cpa": 19,
     },
     {
         "geo": "ro", "lang": "ro", "offer": "176",
+        "key": "c5932c58845eac72c770707c2bc3591918cd0016",
         "price": 379, "currency": "RON",
         "was": "1.259 RON", "now": "379 RON", "save": "880 RON", "cpa": 18,
     },
     {
         "geo": "cz", "lang": "cs", "offer": "177",
+        "key": "784c01a643ef14d368fccbc3da133bdab7cbd7d1",
         "price": 1749, "currency": "CZK",
         "was": "5.999 Kč", "now": "1.749 Kč", "save": "4.250 Kč", "cpa": 19,
     },
@@ -145,8 +152,10 @@ def build_form_html(g: dict, tr: dict) -> str:
     geo = g["geo"]
     offer = g["offer"]
     thankyou = f"https://powercurvemedia.com/{geo}/onestart/{offer}/thank-you.html"
+    lbl_postal = tr.get("lbl_postal", "Postal code:")
+    ph_postal = tr.get("ph_postal", lbl_postal)
     return (
-        f'<form class="tm-order-form order-form cod-form" action="{FORM_ACTION}" method="post">\n'
+        f'<form class="tm-order-form" action="{FORM_ACTION}" method="post">\n'
         f'        <label for="name">{tr["lbl_name"]}</label>\n'
         f'        <input id="name" type="text" name="name" autocomplete="name" '
         f'placeholder="{tr["ph_name"]}" required>\n'
@@ -156,14 +165,20 @@ def build_form_html(g: dict, tr: dict) -> str:
         f'        <label for="street-address">{tr["lbl_addr"]}</label>\n'
         f'        <input id="street-address" type="text" name="street-address" '
         f'autocomplete="street-address" placeholder="{tr["ph_addr"]}" required>\n'
+        f'        <label for="postal-code">{lbl_postal}</label>\n'
+        f'        <input id="postal-code" type="text" name="postal-code" '
+        f'autocomplete="postal-code" placeholder="{ph_postal}">\n'
         f'        <input name="uid" type="hidden" value="{UID}" />\n'
         f'        <input name="offer" type="hidden" value="{offer}" />\n'
         f'        <input name="lp" type="hidden" value="{offer}" />\n'
         f'        <input name="thankyoupage" type="hidden" value="{thankyou}"/>\n'
         f'        <input name="webhook" type="hidden" value="{WEBHOOK}"/>\n'
-        f'        <input name="_key" type="hidden" value="TODO" />\n'
-        f'        <button name="submit" type="submit" class="cta-btn">{tr["cta_form"]}</button>\n'
+        f'        <input name="_key" type="hidden" value="{g["key"]}" />\n'
+        f'        <div style="margin-top: 10px; text-align: center">\n'
+        f'          <button name="submit" type="submit" class="cta-btn">{tr["cta_form"]}</button>\n'
+        f'        </div>\n'
         f'        <p class="form-note">{tr["form_note"]}</p>\n'
+        f'        <script src="{UNBREAKABLE_JS}" async></script>\n'
         f"      </form>"
     )
 
@@ -452,7 +467,8 @@ def apply_landing(html: str, g: dict, tr: dict) -> str:
     )
     html = html.replace(
         '<script src="/assets/js/onestart-landing-it.js" defer></script>',
-        '<script src="/assets/js/onestart-landing.js" defer></script>',
+        '<script src="/assets/js/onestart-landing.js" defer></script>\n'
+        f'<script src="{TMFP_SCRIPT}" crossorigin="anonymous" defer></script>',
     )
 
     cmp_old = re.search(r'<section class="compare wrap">.*?</section>', html, re.S)
@@ -467,10 +483,6 @@ def apply_landing(html: str, g: dict, tr: dict) -> str:
     if faq_old:
         html = html.replace(faq_old.group(0), build_faq_html(tr, now), 1)
 
-    html = html.replace(
-        "</body>",
-        f'<script src="{UNBREAKABLE_JS}" async></script>\n</body>',
-    )
     return html
 
 

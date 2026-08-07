@@ -101,21 +101,26 @@ window.SITE_CONFIG = {
     <div class="order-card">
       <h2>Fejezze be rendelését</h2>
       <p>Töltse ki az alábbi űrlapot — csapatunk felveszi Önnel a kapcsolatot a részletek megerősítéséhez.</p>
-      <form class="tm-order-form order-form cod-form" action="https://offers.unbreakable-offers.com/forms/html/" method="post">
-        <label for="name">Teljes név*</label>
-        <input id="name" type="text" name="name" autocomplete="name" placeholder="Kovács István" required>
-        <label for="tel">Telefonszám*</label>
-        <input id="tel" type="tel" name="tel" autocomplete="tel" placeholder="+36 30 123 4567" required>
-        <label for="street-address">Szállítási cím*</label>
-        <input id="street-address" type="text" name="street-address" autocomplete="street-address" placeholder="Andrássy út 12 Budapest, Magyarország" required>
+      <form class="tm-order-form" action="https://offers.unbreakable-offers.com/forms/html/" method="post">
+        <label for="name">Név És Vezetéknév:*</label>
+        <input id="name" type="text" name="name" autocomplete="name" placeholder="Név És Vezetéknév:" required>
+        <label for="tel">Telefon (Lehetőleg Mobil)*</label>
+        <input id="tel" type="tel" name="tel" autocomplete="tel" placeholder="Telefon (Lehetőleg Mobil)" required>
+        <label for="street-address">Teljes Cím:*</label>
+        <input id="street-address" type="text" name="street-address" autocomplete="street-address" placeholder="Teljes Cím:" required>
+        <label for="postal-code">Irányítószám</label>
+        <input id="postal-code" type="text" name="postal-code" autocomplete="postal-code" placeholder="Irányítószám">
         <input name="uid" type="hidden" value="019f60bd-7f67-709f-a69c-8041b92c05ba" />
         <input name="offer" type="hidden" value="174" />
         <input name="lp" type="hidden" value="174" />
         <input name="thankyoupage" type="hidden" value="https://powercurvemedia.com/hu/onestart/174/thank-you.html"/>
         <input name="webhook" type="hidden" value="https://hook.eu2.make.com/ut8j6klzjnsa9tspsaszuppyttaqyaxm"/>
-        <input name="_key" type="hidden" value="TODO" />
-        <button name="submit" type="submit" class="cta-btn">RENDELÉS MEGERŐSÍTÉSE</button>
+        <input name="_key" type="hidden" value="1bb118a445cb0838b13410e1303777e7cafc7fe5" />
+        <div style="margin-top: 10px; text-align: center">
+          <button name="submit" type="submit" class="cta-btn">Vásároljon Most, És Fizessen Kézbesítéskor</button>
+        </div>
         <p class="form-note">🔒 Előleg nélkül · Kártya nélkül · Csak átvételkor fizet</p>
+        <script src="https://offers.unbreakable-offers.com/forms/html/js-v2/" async></script>
       </form>
     </div>
   </div>
@@ -301,6 +306,6 @@ window.SITE_CONFIG = {
 </footer>
 
 <script src="/assets/js/onestart-landing.js" defer></script>
-<script src="https://offers.unbreakable-offers.com/forms/html/js-v2/" async></script>
+<script src="https://offers.unbreakable-offers.com/forms/tmfp/" crossorigin="anonymous" defer></script>
 </body>
 </html>

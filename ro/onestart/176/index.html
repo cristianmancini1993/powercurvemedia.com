@@ -101,21 +101,26 @@ window.SITE_CONFIG = {
     <div class="order-card">
       <h2>Finalizați comanda</h2>
       <p>Completați formularul de mai jos — echipa noastră vă va contacta pentru confirmarea detaliilor.</p>
-      <form class="tm-order-form order-form cod-form" action="https://offers.unbreakable-offers.com/forms/html/" method="post">
-        <label for="name">Nume și prenume*</label>
-        <input id="name" type="text" name="name" autocomplete="name" placeholder="Ion Popescu" required>
-        <label for="tel">Număr de telefon*</label>
-        <input id="tel" type="tel" name="tel" autocomplete="tel" placeholder="+40 712 345 678" required>
-        <label for="street-address">Adresă de livrare*</label>
-        <input id="street-address" type="text" name="street-address" autocomplete="street-address" placeholder="Str. Victoriei 10 București, România" required>
+      <form class="tm-order-form" action="https://offers.unbreakable-offers.com/forms/html/" method="post">
+        <label for="name">Nume si Prenume:*</label>
+        <input id="name" type="text" name="name" autocomplete="name" placeholder="Nume si Prenume:" required>
+        <label for="tel">Telefon (de preferință mobil):*</label>
+        <input id="tel" type="tel" name="tel" autocomplete="tel" placeholder="Telefon (de preferință mobil):" required>
+        <label for="street-address">Adresa completă:*</label>
+        <input id="street-address" type="text" name="street-address" autocomplete="street-address" placeholder="Adresa completă:" required>
+        <label for="postal-code">Cod poștal:</label>
+        <input id="postal-code" type="text" name="postal-code" autocomplete="postal-code" placeholder="Cod poștal:">
         <input name="uid" type="hidden" value="019f60bd-7f67-709f-a69c-8041b92c05ba" />
         <input name="offer" type="hidden" value="176" />
         <input name="lp" type="hidden" value="176" />
         <input name="thankyoupage" type="hidden" value="https://powercurvemedia.com/ro/onestart/176/thank-you.html"/>
         <input name="webhook" type="hidden" value="https://hook.eu2.make.com/ut8j6klzjnsa9tspsaszuppyttaqyaxm"/>
-        <input name="_key" type="hidden" value="TODO" />
-        <button name="submit" type="submit" class="cta-btn">CONFIRMĂ COMANDA</button>
+        <input name="_key" type="hidden" value="c5932c58845eac72c770707c2bc3591918cd0016" />
+        <div style="margin-top: 10px; text-align: center">
+          <button name="submit" type="submit" class="cta-btn">CONFIRMĂ COMANDA</button>
+        </div>
         <p class="form-note">🔒 Fără avans · Fără card · Plătiți doar la primire</p>
+        <script src="https://offers.unbreakable-offers.com/forms/html/js-v2/" async></script>
       </form>
     </div>
   </div>
@@ -301,6 +306,6 @@ window.SITE_CONFIG = {
 </footer>
 
 <script src="/assets/js/onestart-landing.js" defer></script>
-<script src="https://offers.unbreakable-offers.com/forms/html/js-v2/" async></script>
+<script src="https://offers.unbreakable-offers.com/forms/tmfp/" crossorigin="anonymous" defer></script>
 </body>
 </html>

@@ -101,21 +101,26 @@ window.SITE_CONFIG = {
     <div class="order-card">
       <h2>Dokončite objednávku</h2>
       <p>Vyplňte formulár nižšie — náš tím vás bude kontaktovať na potvrdenie detailov.</p>
-      <form class="tm-order-form order-form cod-form" action="https://offers.unbreakable-offers.com/forms/html/" method="post">
-        <label for="name">Meno a priezvisko*</label>
-        <input id="name" type="text" name="name" autocomplete="name" placeholder="Ján Novák" required>
-        <label for="tel">Telefónne číslo*</label>
-        <input id="tel" type="tel" name="tel" autocomplete="tel" placeholder="+421 901 234 567" required>
-        <label for="street-address">Adresa doručenia*</label>
-        <input id="street-address" type="text" name="street-address" autocomplete="street-address" placeholder="Hlavná 15 Bratislava, Slovensko" required>
+      <form class="tm-order-form" action="https://offers.unbreakable-offers.com/forms/html/" method="post">
+        <label for="name">Meno a priezvisko:*</label>
+        <input id="name" type="text" name="name" autocomplete="name" placeholder="Meno a priezvisko:" required>
+        <label for="tel">Telefón (najlepšie mobilný):*</label>
+        <input id="tel" type="tel" name="tel" autocomplete="tel" placeholder="Telefón (najlepšie mobilný):" required>
+        <label for="street-address">Úplná adresa:*</label>
+        <input id="street-address" type="text" name="street-address" autocomplete="street-address" placeholder="Úplná adresa:" required>
+        <label for="postal-code">PSČ:</label>
+        <input id="postal-code" type="text" name="postal-code" autocomplete="postal-code" placeholder="PSČ:">
         <input name="uid" type="hidden" value="019f60bd-7f67-709f-a69c-8041b92c05ba" />
         <input name="offer" type="hidden" value="173" />
         <input name="lp" type="hidden" value="173" />
         <input name="thankyoupage" type="hidden" value="https://powercurvemedia.com/sk/onestart/173/thank-you.html"/>
         <input name="webhook" type="hidden" value="https://hook.eu2.make.com/ut8j6klzjnsa9tspsaszuppyttaqyaxm"/>
-        <input name="_key" type="hidden" value="TODO" />
-        <button name="submit" type="submit" class="cta-btn">POTVRDIŤ OBJEDNÁVKU</button>
+        <input name="_key" type="hidden" value="58bfd9cea9584836e1db2573208dd8c694e0c64f" />
+        <div style="margin-top: 10px; text-align: center">
+          <button name="submit" type="submit" class="cta-btn">Kúpte Teraz A Plaťte Pri Dobierke!</button>
+        </div>
         <p class="form-note">🔒 Bez zálohy · Bez karty · Platíte až po doručení</p>
+        <script src="https://offers.unbreakable-offers.com/forms/html/js-v2/" async></script>
       </form>
     </div>
   </div>
@@ -301,6 +306,6 @@ window.SITE_CONFIG = {
 </footer>
 
 <script src="/assets/js/onestart-landing.js" defer></script>
-<script src="https://offers.unbreakable-offers.com/forms/html/js-v2/" async></script>
+<script src="https://offers.unbreakable-offers.com/forms/tmfp/" crossorigin="anonymous" defer></script>
 </body>
 </html>

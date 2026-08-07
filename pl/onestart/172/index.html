@@ -101,21 +101,26 @@ window.SITE_CONFIG = {
     <div class="order-card">
       <h2>Dokończ zamówienie</h2>
       <p>Wypełnij formularz poniżej — nasz zespół skontaktuje się z Tobą, aby potwierdzić szczegóły.</p>
-      <form class="tm-order-form order-form cod-form" action="https://offers.unbreakable-offers.com/forms/html/" method="post">
-        <label for="name">Imię i nazwisko*</label>
-        <input id="name" type="text" name="name" autocomplete="name" placeholder="Jan Kowalski" required>
-        <label for="tel">Numer telefonu*</label>
-        <input id="tel" type="tel" name="tel" autocomplete="tel" placeholder="+48 512 345 678" required>
-        <label for="street-address">Adres dostawy*</label>
-        <input id="street-address" type="text" name="street-address" autocomplete="street-address" placeholder="ul. Marszałkowska 10 Warszawa, Polska" required>
+      <form class="tm-order-form" action="https://offers.unbreakable-offers.com/forms/html/" method="post">
+        <label for="name">Imię i nazwisko:*</label>
+        <input id="name" type="text" name="name" autocomplete="name" placeholder="Imię i nazwisko:" required>
+        <label for="tel">Telefon (najlepiej komórkowy):*</label>
+        <input id="tel" type="tel" name="tel" autocomplete="tel" placeholder="Telefon (najlepiej komórkowy):" required>
+        <label for="street-address">Pełny adres:*</label>
+        <input id="street-address" type="text" name="street-address" autocomplete="street-address" placeholder="Pełny adres:" required>
+        <label for="postal-code">Kod Pocztowy:</label>
+        <input id="postal-code" type="text" name="postal-code" autocomplete="postal-code" placeholder="Kod Pocztowy:">
         <input name="uid" type="hidden" value="019f60bd-7f67-709f-a69c-8041b92c05ba" />
         <input name="offer" type="hidden" value="172" />
         <input name="lp" type="hidden" value="172" />
         <input name="thankyoupage" type="hidden" value="https://powercurvemedia.com/pl/onestart/172/thank-you.html"/>
         <input name="webhook" type="hidden" value="https://hook.eu2.make.com/ut8j6klzjnsa9tspsaszuppyttaqyaxm"/>
-        <input name="_key" type="hidden" value="TODO" />
-        <button name="submit" type="submit" class="cta-btn">POTWIERDŹ ZAMÓWIENIE</button>
+        <input name="_key" type="hidden" value="d364a21b82734088cce05e459b8940c5531bd5dc" />
+        <div style="margin-top: 10px; text-align: center">
+          <button name="submit" type="submit" class="cta-btn">POTWIERDŹ ZAMÓWIENIE</button>
+        </div>
         <p class="form-note">🔒 Bez zaliczki · Bez karty · Płacisz dopiero po otrzymaniu</p>
+        <script src="https://offers.unbreakable-offers.com/forms/html/js-v2/" async></script>
       </form>
     </div>
   </div>
@@ -301,6 +306,6 @@ window.SITE_CONFIG = {
 </footer>
 
 <script src="/assets/js/onestart-landing.js" defer></script>
-<script src="https://offers.unbreakable-offers.com/forms/html/js-v2/" async></script>
+<script src="https://offers.unbreakable-offers.com/forms/tmfp/" crossorigin="anonymous" defer></script>
 </body>
 </html>
