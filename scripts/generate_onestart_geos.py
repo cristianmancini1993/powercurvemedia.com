@@ -505,7 +505,7 @@ def build_thankyou(g: dict, tr: dict) -> str:
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>{tr["ty_title"]}</title>
 <meta name="description" content="{tr["ty_desc"]}">
-<meta name="contact" content="info@powercurvemedia.com">
+<meta name="contact" content="rekllcbusiness@gmail.com">
 <meta name="theme-color" content="#1f9d55">
 <meta name="robots" content="noindex, nofollow">
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
@@ -609,7 +609,7 @@ window.SITE_CONFIG = {{
       <li><a href="/{geo}/shipping-policy.html">{tr["ty_footer_ship"]}</a></li>
       <li><a href="/{geo}/refund-policy.html">{tr["ty_footer_refund"]}</a></li>
     </ul>
-    <p class="ty-footer__copy">© 2026 <strong>Unbreakable Network Media LLC</strong> — {tr["footer_rights"]}</p>
+    <p class="ty-footer__copy">© 2026 <strong>REK LLC</strong> — {tr["footer_rights"]}</p>
   </div>
 </footer>
 

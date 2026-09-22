@@ -517,7 +517,7 @@ def landing_html(g: dict, tr: dict) -> str:
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <title>{tr['title']}</title>
 <meta name="description" content="{tr['description']}">
-<meta name="contact" content="info@powercurvemedia.com">
+<meta name="contact" content="rekllcbusiness@gmail.com">
 <meta name="theme-color" content="#14181f">
 <link rel="canonical" href="{canonical}">
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
@@ -719,8 +719,8 @@ window.SITE_CONFIG = {{
         <span style="font-size:22px;font-weight:800;color:#fff;">powercurve<span style="color:#16a34a;">media</span></span>
       </a>
       <p class="site-footer__tagline">{tr['footer_tag']}</p>
-      <p class="site-footer__address">Unbreakable Network Media LLC — 30 N Gould St Ste R — Sheridan, WY 82801 · EIN: 36-5155499</p>
-      <p class="site-footer__email"><a href="mailto:info@powercurvemedia.com">info@powercurvemedia.com</a></p>
+      <p class="site-footer__address">REK LLC — 1603 Capitol Avenue, Suite 413, Cheyenne, WY 82001, United States · Reg. Number: 301362644</p>
+      <p class="site-footer__email"><a href="mailto:rekllcbusiness@gmail.com">rekllcbusiness@gmail.com</a></p>
     </div>
     <div>
       <h3>{tr['footer_info']}</h3>
@@ -735,7 +735,7 @@ window.SITE_CONFIG = {{
       <ul>
         <li><a href="/">{tr['footer_home']}</a></li>
         <li><a href="/{geo}/">{geo.upper()}</a></li>
-        <li><a href="mailto:info@powercurvemedia.com">{tr['footer_contact']}</a></li>
+        <li><a href="mailto:rekllcbusiness@gmail.com">{tr['footer_contact']}</a></li>
       </ul>
     </div>
     <div>
