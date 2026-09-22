@@ -915,7 +915,7 @@ window.SITE_CONFIG = {{
         <span style="font-size:22px;font-weight:800;color:#fff;">powercurve<span style="color:#16a34a;">media</span></span>
       </a>
       <p class="site-footer__tagline">{tr['footer_tag']}</p>
-      <p class="site-footer__address">Global Health Distribution S.r.l. — Piazza San Marco 5, 25063 Gardone Val Trompia, Italia</p>
+      <p class="site-footer__address">Unbreakable Network Media LLC — 30 N Gould St Ste R — Sheridan, WY 82801 · EIN: 36-5155499</p>
       <p class="site-footer__email"><a href="mailto:info@powercurvemedia.com">info@powercurvemedia.com</a></p>
     </div>
     <div>
@@ -1076,7 +1076,7 @@ window.SITE_CONFIG = {{
       <li><a href="/{geo}/shipping-policy.html">{tr['footer_ship']}</a></li>
       <li><a href="/{geo}/refund-policy.html">{tr['footer_refund']}</a></li>
     </ul>
-    <p class="ty-footer__copy">© 2026 <strong>Global Health Distribution S.r.l.</strong> — {tr['ty_copy']}</p>
+    <p class="ty-footer__copy">© 2026 <strong>Unbreakable Network Media LLC</strong> — {tr['ty_copy']}</p>
   </div>
 </footer>
 

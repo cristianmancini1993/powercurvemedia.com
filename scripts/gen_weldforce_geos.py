@@ -267,7 +267,7 @@ T = {
         "ty_b1": "🔒 Plačilo ob dostavi",
         "ty_b2": "🛡️ Garancija 24 mesecev",
         "ty_b3": "🔐 Zaščita SSL",
-        "ty_footer_addr": "Piazza San Marco 5 — 25063 Gardone Val Trompia",
+        "ty_footer_addr": "30 N Gould St Ste R — Sheridan, WY 82801",
     },
     "ro": {
         "meta_title": "WeldForce 800™ — Aparat de sudură profesional 8 în 1 fără butelie | -70% doar azi",
@@ -433,7 +433,7 @@ T = {
         "ty_b1": "🔒 Plata la livrare",
         "ty_b2": "🛡️ Garanție 24 luni",
         "ty_b3": "🔐 Protecție SSL",
-        "ty_footer_addr": "Piazza San Marco 5 — 25063 Gardone Val Trompia",
+        "ty_footer_addr": "30 N Gould St Ste R — Sheridan, WY 82801",
     },
     "pl": {
         "meta_title": "WeldForce 800™ — Profesjonalna spawarka 8 w 1 bez butli | -70% tylko dziś",
@@ -599,7 +599,7 @@ T = {
         "ty_b1": "🔒 Płatność za pobraniem",
         "ty_b2": "🛡️ Gwarancja 24 miesiące",
         "ty_b3": "🔐 Ochrona SSL",
-        "ty_footer_addr": "Piazza San Marco 5 — 25063 Gardone Val Trompia",
+        "ty_footer_addr": "30 N Gould St Ste R — Sheridan, WY 82801",
     },
 }
 
@@ -768,7 +768,7 @@ T_EXTRA = {
         "ty_b1": "🔒 Fizetés átvételkor",
         "ty_b2": "🛡️ 24 hónap garancia",
         "ty_b3": "🔐 SSL védelem",
-        "ty_footer_addr": "Piazza San Marco 5 — 25063 Gardone Val Trompia",
+        "ty_footer_addr": "30 N Gould St Ste R — Sheridan, WY 82801",
     },
     "cz": {
         "meta_title": "WeldForce 800™ — Profesionální svářečka 8 v 1 bez lahve | -70% jen dnes",
@@ -934,7 +934,7 @@ T_EXTRA = {
         "ty_b1": "🔒 Platba na dobírku",
         "ty_b2": "🛡️ Záruka 24 měsíců",
         "ty_b3": "🔐 Ochrana SSL",
-        "ty_footer_addr": "Piazza San Marco 5 — 25063 Gardone Val Trompia",
+        "ty_footer_addr": "30 N Gould St Ste R — Sheridan, WY 82801",
     },
     "sk": {
         "meta_title": "WeldForce 800™ — Profesionálna zváračka 8 v 1 bez fľaše | -70% len dnes",
@@ -1100,7 +1100,7 @@ T_EXTRA = {
         "ty_b1": "🔒 Platba na dobierku",
         "ty_b2": "🛡️ Záruka 24 mesiacov",
         "ty_b3": "🔐 Ochrana SSL",
-        "ty_footer_addr": "Piazza San Marco 5 — 25063 Gardone Val Trompia",
+        "ty_footer_addr": "30 N Gould St Ste R — Sheridan, WY 82801",
     },
 }
 
@@ -1397,7 +1397,7 @@ def apply_landing(html: str, g: dict, tr: dict) -> str:
         (">Politica di Spedizione<", f">{tr['footer_ship']}<"),
         (">Politica di Rimborso<", f">{tr['footer_refund']}<"),
         (">Contatti<", f">{tr['footer_contacts']}<"),
-        ("25063 Gardone Val Trompia, Italia", f"25063 Gardone Val Trompia, {tr['footer_country']}"),
+        ("Sheridan, WY 82801", f"Sheridan, WY 82801, {tr['footer_country']}"),
         ("Tutti i diritti riservati", tr["footer_rights"]),
     ]
 
@@ -1512,7 +1512,7 @@ def apply_thankyou(html: str, g: dict, tr: dict) -> str:
         (">Politica di Rimborso<", f">{tr['footer_refund']}<"),
         (">Contatti<", f">{tr['footer_contacts']}<"),
         (
-            "Piazza San Marco 5 — 25063 Gardone Val Trompia",
+            "30 N Gould St Ste R — Sheridan, WY 82801",
             tr["ty_footer_addr"],
         ),
         ("Tutti i diritti riservati", tr["footer_rights"]),

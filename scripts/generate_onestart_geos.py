@@ -609,7 +609,7 @@ window.SITE_CONFIG = {{
       <li><a href="/{geo}/shipping-policy.html">{tr["ty_footer_ship"]}</a></li>
       <li><a href="/{geo}/refund-policy.html">{tr["ty_footer_refund"]}</a></li>
     </ul>
-    <p class="ty-footer__copy">© 2026 <strong>Global Health Distribution S.r.l.</strong> — {tr["footer_rights"]}</p>
+    <p class="ty-footer__copy">© 2026 <strong>Unbreakable Network Media LLC</strong> — {tr["footer_rights"]}</p>
   </div>
 </footer>
 

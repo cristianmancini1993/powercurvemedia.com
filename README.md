@@ -7,7 +7,7 @@ Static HTML/CSS/JS multi-geo e-commerce site for Cash On Delivery campaigns (Met
 ## Quick facts
 
 - **Domain**: powercurvemedia.com
-- **Company**: Global Health Distribution S.r.l. — Piazza San Marco 5 — 25063 Gardone Val Trompia, Italia
+- **Company**: Unbreakable Network Media LLC — 30 N Gould St Ste R — Sheridan, WY 82801 · EIN: 36-5155499
 - **Contact email**: info@powercurvemedia.com (auto-derived from domain)
 - **First product**: HyperTrimmer™ 3000 (slug: `hypertrimmer`) — battery-powered grass trimmer
 - **Geos active**: 18 (it, es, fr, de, pt, gr, bg, ro, cz, pl, ee, lv, lt, hr, hu, si, sk, en)
@@ -138,6 +138,6 @@ Then add the product card to each `[geo]/index.html` and the URLs to `sitemap.xm
 
 ## License & ownership
 
-© 2026 Global Health Distribution S.r.l. — All rights reserved.
+© 2026 Unbreakable Network Media LLC — All rights reserved.
 
 Generated with the Landing Factory multi-geo static template.
